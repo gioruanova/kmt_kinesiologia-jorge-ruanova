@@ -223,7 +223,7 @@ header {
 }
 
 .btn__navigation__link {
-  margin: 2rem 0;
+  margin: 2rem 0 0 0;
   padding: 10px 30px;
 }
 
@@ -563,7 +563,7 @@ header {
     width: 100%;
   }
   .card__container {
-    gap: 5rem;
+    gap: 2rem;
     flex-direction: column;
   }
   .card p {
