@@ -451,6 +451,7 @@ header {
       margin-top: 1rem;
     }
     .up__fixed__icon {
+      background-color: var(--SecondaryColor);
       display: none;
       width: 50px;
     }
@@ -460,12 +461,7 @@ header {
     .whatsapp__fixed__icon {
       background-color: var(--SecondaryColor);
     }
-    .up__fixed__icon {
-      background-color: var(--SecondaryColor);
-      display: none;
-      cursor: pointer;
-      width: 50px;
-    }
+
     .follow {
       flex-direction: row;
     }
