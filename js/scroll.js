@@ -12,7 +12,7 @@ function scrollFunction() {
   ) {
     mybutton.style.display = "flex";
   } else {
-    mybutton.style.display = "none";
+    mybutton.style.display = "";
   }
 }
 // When the user clicks on the button, scroll to the top of the document
