@@ -10,9 +10,9 @@ function scrollFunction() {
     document.body.scrollTop > 20 ||
     document.documentElement.scrollTop > 20
   ) {
-    mybutton.style.display = "flex";
+    mybutton.style.opacity = "1";
   } else {
-    mybutton.style.display = "";
+    mybutton.style.opacity = "0";
   }
 }
 // When the user clicks on the button, scroll to the top of the document
