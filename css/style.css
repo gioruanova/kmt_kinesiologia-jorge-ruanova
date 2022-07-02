@@ -7,7 +7,7 @@
 
   --PrimaryColor: #ffffff; /* BLANCO */
   --SecondaryColor: #d96161; /* NARANJA OSCURO */
-  --BurgerBorder: #6b3131; /* NARANJA OSCURO */
+  --ShadowColor: #6b3131; /* NARANJA OSCURO */
   --3rdColor: #f0bb77; /* NARANJA CLARO */
 
   --InstagramColor: #568eed; /* AZUL */
@@ -144,7 +144,7 @@ header {
     transition: var(--Transitions);
     z-index: 9999;
     font-size: 1.5rem;
-    border: 2px solid var(--PrimaryColor);
+    box-shadow: 0px -0px 10px var(--ShadowColor);
   }
   .top__NavBar h2 {
     display: none;
@@ -406,7 +406,7 @@ header {
       border-radius: 50%;
       transition: var(--Transitions);
       z-index: 2;
-      border: 2px solid var(--PrimaryColor);
+      box-shadow: 0px -0px 10px var(--WhattsAppColorHoverMobile);
     }
 
     .follow {
@@ -441,7 +441,7 @@ header {
   @media (min-width: 1024px) {
     .whatsapp__fixed__icon {
       background-color: var(--SecondaryColor);
-      border: 2px solid var(--PrimaryColor);
+      box-shadow: 0px -0px 10px var(--ShadowColor);
     }
 
     .follow {
@@ -500,7 +500,7 @@ header {
   }
 
   .whatsapp__fixed__icon:hover {
-    background-color: var(--WhattsAppColorHoverDesktop);
+    background-color: var(--WhattsAppColorMobile);
   }
 
   /* ------------TITLES------------------------- */
