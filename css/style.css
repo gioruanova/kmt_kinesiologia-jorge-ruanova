@@ -7,7 +7,7 @@
 
   --PrimaryColor: #ffffff; /* BLANCO */
   --SecondaryColor: #d96161; /* NARANJA OSCURO */
-  --SecondaryColorTransp: #d961617e; /* NARANJA OSCURO */
+  --BurgerBorder: #6b3131; /* NARANJA OSCURO */
   --3rdColor: #f0bb77; /* NARANJA CLARO */
 
   --InstagramColor: #568eed; /* AZUL */
@@ -140,10 +140,11 @@ header {
     top: 10px;
     left: 10px;
     background-color: var(--SecondaryColor);
-    border-radius: 100%;
+    border-radius: 50%;
     transition: var(--Transitions);
     z-index: 9999;
     font-size: 1.5rem;
+    border: 2px solid var(--PrimaryColor);
   }
   .top__NavBar h2 {
     display: none;
@@ -305,7 +306,7 @@ header {
       flex-direction: column;
       margin-bottom: 0rem;
       padding-bottom: 1rem;
-      border-bottom: 2px solid var(--SecondaryColorTransp);
+      border-bottom: 2px solid var(--SecondaryColor);
     }
     .footer__copyright p {
       font-family: var(--PrimaryFont);
@@ -402,28 +403,12 @@ header {
       bottom: 20px;
       right: 20px;
       background-color: var(--WhattsAppColorMobile);
-      border-radius: 100%;
+      border-radius: 50%;
       transition: var(--Transitions);
       z-index: 2;
+      border: 2px solid var(--PrimaryColor);
     }
 
-    .up__fixed__icon {
-      display: flex;
-      align-content: center;
-      justify-content: center;
-      align-items: center;
-      position: fixed;
-      width: 50px;
-      height: 50px;
-      bottom: 80px;
-      right: 20px;
-      background-color: var(--SecondaryColor);
-      border-radius: 100%;
-      transition: var(--Transitions);
-      z-index: 2;
-      cursor: pointer;
-      opacity: 0;
-    }
     .follow {
       display: flex;
       flex-direction: column;
@@ -456,6 +441,7 @@ header {
   @media (min-width: 1024px) {
     .whatsapp__fixed__icon {
       background-color: var(--SecondaryColor);
+      border: 2px solid var(--PrimaryColor);
     }
 
     .follow {
@@ -508,17 +494,13 @@ header {
     cursor: pointer;
   }
 
-  .whatsapp__fixed__icon i,
-  .up__fixed__icon i {
+  .whatsapp__fixed__icon i {
     font-size: 30px;
     color: var(--PrimaryColor);
   }
+
   .whatsapp__fixed__icon:hover {
     background-color: var(--WhattsAppColorHoverDesktop);
-  }
-
-  .up__fixed__icon:hover {
-    background-color: var(--3rdColor);
   }
 
   /* ------------TITLES------------------------- */
@@ -1006,7 +988,7 @@ header {
     justify-content: center;
     align-items: center;
     background-color: var(--SecondaryColor);
-    border-radius: 100%;
+    border-radius: 50%;
     color: var(--SecondaryBackground);
     font-size: 3rem;
     padding: 0.5rem;
