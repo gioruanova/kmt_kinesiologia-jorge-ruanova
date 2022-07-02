@@ -408,6 +408,7 @@ header {
     }
 
     .up__fixed__icon {
+      display: flex;
       align-content: center;
       justify-content: center;
       align-items: center;
@@ -420,7 +421,6 @@ header {
       border-radius: 100%;
       transition: var(--Transitions);
       z-index: 2;
-
       display: none;
       cursor: pointer;
     }
