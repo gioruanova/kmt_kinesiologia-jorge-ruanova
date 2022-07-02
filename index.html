@@ -26,6 +26,8 @@
     <link rel="apple-touch-icon" href="/assets/logos/meta.png" />
     <link rel="icon" href="/assets/logos/Favicon.ico" />
 
+
+
     <!-- -------IMPORTS-------- -->
     <!-- -------G FONTS-------- -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,52 +45,72 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <!-- -------FIN IMPORTS-------- -->
+
 </head>
 
 <body>
-    <a href="https://api.whatsapp.com/send?phone=5491134765910&text=Hola!%20Quisiera%20asesorarme%20por%20las%20sesiones%20de%20Kinesiologia%20y%20Fisiatria%20"
-        target="_blank" rel="noreferrer" title="Realizá tu consulta por WhatsApp">
-        <div class="whatsapp__fixed__icon" target="_blank" rel="noreferrer">
-            <i class="fa-brands fa-whatsapp"></i>
-        </div>
-    </a>
 
+    <!-- -----ARRANCA TOP NAVBAR----- -->
+    <div class="top__NavBar">
+        <div>
+            <h2>Maximiniliano Torres <span> ~ Kinesiología & Fisiatría</span></h2>
+        </div>
+        <div class="navBar__redes__top">
+            <a href="mailto:mtorres363@gmail.com" target="_blank" rel="noreferrer" title="E-Mail">
+                <i class="fa-regular fa-envelope"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5491134765910&text=Hola!%20Quisiera%20asesorarme%20por%20las%20sesiones%20de%20Kinesiologia%20y%20Fisiatria%20"
+                target="_blank" rel="noreferrer" title="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/maxitorres.fkt/" target="_blank" rel="noreferrer" title="Instagra"> <i
+                    class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+    <!-- -----TERMINA TOP NAVBAR----- -->
+    <!-- -----ARRANCA NAVBAR----- -->
     <header>
-        <nav>
-            <div class="navBar" id="#top">
-                <div class="navBar__left__content">
-                    <div class="navBar__burger">
-                        <i class="fa-solid fa-bars-staggered"></i>
-                    </div>
-                    <div class="navBar__logo__container">
-                        <a href="#">
-                            <img class="navBar__logo navBar__logo__index" src="./assets/logos/LogoHeader.png" />
-                        </a>
-                    </div>
-                </div>
-                <div class="navBar__right__content">
-                    <ul class="navBar__links">
-                        <li><a class="navBar__links__active__page" href="#">Inicio</a></li>
-                        <li><a href="./pages/Biografia.html">Biografía</a></li>
-                        <li><a href="./pages/vision.html">Visión</a></li>
-                        <li><a href="./pages/tratamientos.html">Tratamientos</a></li>
-                        <li><a class="btn navBar__btn__mobile" href="#contacto">Contacto</a></li>
-                    </ul>
-                    <div class="navBar__redes">
-                        <a href="mailto:mtorres363@gmail.com" target="_blank" rel="noreferrer" title="E-Mail">
-                            <i class="fa-regular fa-envelope"></i>
-                        </a>
-                        <a href="https://api.whatsapp.com/send?phone=5491134765910&text=Hola!%20Quisiera%20asesorarme%20por%20las%20sesiones%20de%20Kinesiologia%20y%20Fisiatria%20"
-                            target="_blank" rel="noreferrer" title="WhatsApp">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                        <a href="https://www.instagram.com/maxitorres.fkt/" target="_blank" rel="noreferrer"
-                            title="Instagra"> <i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                </div>
+
+        <nav class="navBar" id="#top">
+            <div class="navBar__logo__container">
+                <img class="navBar__logo navBar__logo__index" src="./assets/logos/LogoHeader.png" />
+
             </div>
+            <div class="navBar__right__content">
+                <ul class="navBar__links">
+                    <li><a class="navBar__links__active__page" href="#">Inicio</a></li>
+                    <li><a href="./pages/biografia.html">Biografía</a></li>
+                    <li><a href="./pages/vision.html">Visión</a></li>
+                    <li><a href="./pages/tratamientos.html">Tratamientos</a></li>
+                    <li><a class="btn navBar__btn__mobile" href="#contacto">Contacto</a></li>
+                </ul>
+
+            </div>
+
         </nav>
     </header>
+
+    <!-- -----TERMINA NAVBAR----- -->
+    <!-- -----TERMINA MOBILE NAVBAR----- -->
+    <div class="burger__mobile">
+        <i class="fa-solid fa-bars-staggered"></i>
+    </div>
+    <nav class="navBarMobile" id="#top">
+
+        <div class="navBarMobile__right__content">
+            <ul class="navBar__links">
+                <li><a class="navBar__links__active__page" href="#">Inicio</a></li>
+                <li><a href="./pages/biografia.html">Biografía</a></li>
+                <li><a href="./pages/vision.html">Visión</a></li>
+                <li><a href="./pages/tratamientos.html">Tratamientos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+        </div>
+
+    </nav>
+
+    <!-- -----TERMINA MOBILE NAVBAR----- -->
 
     <!-- /* ---------SECTION:HERO BANNER--------- */ -->
     <section>
@@ -98,7 +120,7 @@
                     <img class="hero__banner__logo" src="assets/logos/LogoHeader.png" />
                     <h1>Maximiniliano<span>Torres</span></h1>
 
-                    <h2>Kinesiología & Fisiatría</h2>
+                    <h2>Kinesiología & Fisiatría </h2>
                     <a href="#contacto">
                         <button class="btn hero__banner__btn">Contacto</button>
                     </a>
@@ -119,110 +141,148 @@
     <!-- --------------------------------------------------------------------------------------------------------------------------- -->
     <!-- /* ---------SECTION:BIO--------- */ -->
 
-    <div class="container__color__light">
+    <main>
+        <div class="container__color__light container__color__dark ">
 
-        <div class="card__container ">
-            <!-- CARD 1 -->
-            <div class="card">
-                <h3 class="main__titles"><span>B</span>iografía</h3>
-                <div class="card__icon">
-                    <i class="fa-solid fa-user"></i>
+            <div class="card__container ">
+                <!-- CARD 1 -->
+                <div class="card">
+                    <h3 class="main__titles"><span>B</span>iografía</h3>
+                    <div class="card__icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <p class="main__paragraph">Mi nombre es Maximiliano Torres, soy licenciado en Kinesiología y
+                        Fisiatría, recibido en el
+                        Instituto Universitario de Ciencias de la Salud, Fundación H. A. Barceló (Argentina), enfocado
+                        tanto en la terapia por lesiones y deportiva...</p>
+                    <a href="./pages/Biografia.html"><button class="btn btn__navigation__link margin__0">Seguir
+                            Leyendo</button></a>
                 </div>
-                <p class="main__paragraph">Mi nombre es Maximiliano Torres, soy licenciado en Kinesiología y
-                    Fisiatría, recibido en el
-                    Instituto Universitario de Ciencias de la Salud, Fundación H. A. Barceló (Argentina), enfocado
-                    tanto en la terapia por lesiones y deportiva...</p>
-                <a href="./pages/Biografia.html"><button class="btn btn__navigation__link">Seguir Leyendo</button></a>
-            </div>
 
-            <!-- CARD 2 -->
-            <div class="card">
-                <h3 class="main__titles"><span>V</span>isión</h3>
-                <div class="card__icon">
-                    <i class="fa-solid fa-list-check"></i>
+                <!-- CARD 2 -->
+                <div class="card">
+                    <h3 class="main__titles"><span>V</span>isión</h3>
+                    <div class="card__icon">
+                        <i class="fa-solid fa-list-check"></i>
+                    </div>
+                    <p class="main__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae illo
+                        molestias nulla deserunt officiis, rem rerum repudiandae. Laboriosam, modi praesentium animi
+                        quod
+                        itaque, saepe, in nesciunt officiis suscipit corrupti id fugit rerum velit architecto
+                        consectetur
+                        tempora excepturi dolore nam? Vero repellendus sequi et nisi quasi?</p>
+                    <a href="./pages/vision.html"><button class="btn btn__navigation__link margin__0">Seguir
+                            Leyendo</button></a>
                 </div>
-                <p class="main__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae illo
-                    molestias nulla deserunt officiis, rem rerum repudiandae. Laboriosam, modi praesentium animi quod
-                    itaque, saepe, in nesciunt officiis suscipit corrupti id fugit rerum velit architecto consectetur
-                    tempora excepturi dolore nam? Vero repellendus sequi et nisi quasi?</p>
-                <a href="./pages/vision.html"><button class="btn btn__navigation__link">Seguir Leyendo</button></a>
             </div>
         </div>
-    </div>
+    </main>
     <!-- --------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- /* ---------FRASE--------- */ -->
+    <section>
+        <div
+            class="container__color__light container__color__dark container__color__dark__separator container__color__allign__center">
+            <div class="separator"></div>
+            <div class="separator__frase">
+                <img src="./assets/ImgPicture1.png" class="separator__frase__img"></img>
+                <div class="separator__frase__title">
+                    <h3 class="main__titles"><span>Maximiliano</span>Torres</h3>
+                    <h4 class="main__subtitles">Licenciado en Kinesiología & Fisiatría.</h4>
+                    <div class="separator__frase__texto">
+                        <p>Rehabilitación a través del <span>movimiento</span>, haciendo foco en la parte
+                            <span>postural</span> y así <span>aumentar el bienestar</span> de los pacientes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="separator"></div>
+        </div>
+    </section>
+    <!-- /* ---------FINFRASE--------- */ -->
+
+    <!-- --------------------------------------------------------------------------------------------------------------------------- -->
+
     <!-- /* ---------SECTION:GALLERY--------- */ -->
 
-    <div class="container__color__light container__color__dark">
-        <h3 class="main__titles"><span>E</span>ntrenamientos & Terapias</h3>
-        <div class="follow">
-            <h4 class="main__subtitles margin__0">Mirá mis reels y experiencias en maxitorres.fkt</h4>
-            <button class="btn follow__btn">Seguir</button>
-        </div>
-        <div class="container__imgs__gallery">
-            <div class="contenedor__items">
-                <div class="gallery__item gallery__item1"><a href="https://www.instagram.com/p/CdZGoymOhmr/"
-                        target="_blank" rel="noreferrer" title="Ver Reel en Instagram">Ver reel</a></div>
-                <div class="gallery__item gallery__item2"><a href="https://www.instagram.com/p/CdJYpXKvMQG/"
-                        target="_blank" rel="noreferrer" title="Ver Reel en Instagram">Ver reel</a></div>
-                <div class="gallery__item gallery__item3"><a href="https://www.instagram.com/p/Ccaztj7supw/"
-                        target="_blank" rel="noreferrer" title="Ver Reel en Instagram">Ver reel</a></div>
-                <div class="gallery__item gallery__item4"><a href="https://www.instagram.com/p/CfMM_QRgi6d/"
-                        target="_blank" rel="noreferrer" title="Ver Reel en Instagram">Ver reel</a></div>
-                <div class="gallery__item gallery__item5"><a href="https://www.instagram.com/p/CeCbM35JUGc/"
-                        target="_blank" rel="noreferrer" title="Ver Reel en Instagram">Ver reel</a></div>
-                <div class=" gallery__item gallery__item6"><a href="https://www.instagram.com/p/CZFGlCmLlgI/"
-                        target="_blank" rel="noreferrer" title="Ver Reel en Instagram">Ver reel</a></div>
-                <div class="gallery__item gallery__item7"><a href="https://www.instagram.com/p/CY2PuFwrY_k/"
-                        target="_blank" rel="noreferrer" title="Ver Reel en Instagram">Ver reel</a></div>
-
+    <article>
+        <div class="container__color__light container__color__dark">
+            <h3 class="main__titles"><span>E</span>ntrenamientos & Terapias</h3>
+            <div class="follow">
+                <h4 class="main__subtitles margin__0">Mirá mis reels y experiencias en maxitorres.fkt</h4>
+                <button class="btn follow__btn">Seguir</button>
             </div>
+
+            <!-- ----GALLERY---- -->
+            <!-- <div class="container__imgs__gallery">
+                <div class="contenedor__items">
+                    <div class="gallery__item gallery__item1"><a href="https://www.instagram.com/p/CdZGoymOhmr/"
+                            target="_blank" rel="noreferrer" title="Ver Reel en Instagram">Ver reel</a></div>
+                    <div class="gallery__item gallery__item2"><a href="https://www.instagram.com/p/CdJYpXKvMQG/"
+                            target="_blank" rel="noreferrer" title="Ver Reel en Instagram">Ver reel</a></div>
+                    <div class="gallery__item gallery__item3"><a href="https://www.instagram.com/p/Ccaztj7supw/"
+                            target="_blank" rel="noreferrer" title="Ver Reel en Instagram">Ver reel</a></div>
+                    <div class="gallery__item gallery__item4"><a href="https://www.instagram.com/p/CfMM_QRgi6d/"
+                            target="_blank" rel="noreferrer" title="Ver Reel en Instagram">Ver reel</a></div>
+                    <div class="gallery__item gallery__item5"><a href="https://www.instagram.com/p/CeCbM35JUGc/"
+                            target="_blank" rel="noreferrer" title="Ver Reel en Instagram">Ver reel</a></div>
+                    <div class=" gallery__item gallery__item6"><a href="https://www.instagram.com/p/CZFGlCmLlgI/"
+                            target="_blank" rel="noreferrer" title="Ver Reel en Instagram">Ver reel</a></div>
+                    <div class="gallery__item gallery__item7"><a href="https://www.instagram.com/p/CY2PuFwrY_k/"
+                            target="_blank" rel="noreferrer" title="Ver Reel en Instagram">Ver reel</a></div>
+                </div>
+            </div> -->
+            <!-- ----GALLERY---- -->
+
         </div>
-    </div>
+    </article>
     <!-- --------------------------------------------------------------------------------------------------------------------------- -->
     <!-- /* ---------SECTION:FORM--------- */ -->
 
-    <div class="container__color__light" id="contacto">
-        <h3 class="main__titles"><span>C</span>ontacto</h3>
-        <h4 class="main__subtitles margin__top_1rem">Realiza tu consulta y asesorate sobre los diferentes tratamientos
-        </h4>
+    <section>
+        <div class="container__color__light container__color__dark container__color__allign__center" id="contacto">
+            <h3 class="main__titles"><span>C</span>ontacto</h3>
+            <h4 class="main__subtitles margin__top_1rem">Realiza tu consulta y asesorate sobre los diferentes
+                tratamientos
+            </h4>
 
-        <div class="contact__form__container">
-            <form action="" method="post" enctype="text/plain" class="contact__form">
+            <div class="contact__form__container">
+                <form action="" method="post" enctype="text/plain" class="contact__form">
 
-                <div class="columns">
-                    <label for="name">Nombre: </label>
-                    <input name="name" type="text" required>
-                </div>
+                    <div class="columns">
+                        <label for="name">Nombre: </label>
+                        <input name="name" type="text" required>
+                    </div>
 
-                <div class="columns">
-                    <label for="email">E-mail: </label>
-                    <input name="email" type="email" tabindex="2" required>
-                </div>
+                    <div class="columns">
+                        <label for="email">E-mail: </label>
+                        <input name="email" type="email" tabindex="2" required>
+                    </div>
 
-                <div class="columns">
-                    <label for="whatsapp">WhatsApp: </label>
-                    <input type="tel" tabindex="3" required>
-                </div>
-                <div class="columns">
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea name="mensaje" tabindex="5" required></textarea>
-                </div>
-
-
-                <div class="contact__form__container__btn">
-                    <button name="submit" type="reset"
-                        class="btn contact__form__primary__btn contact__form__secondary__btn">Limpiar Campos</button>
-                    <button name="submit" type="submit" class="btn contact__form__primary__btn">Enviar</button>
-                </div>
+                    <div class="columns">
+                        <label for="whatsapp">WhatsApp: </label>
+                        <input type="tel" tabindex="3" required>
+                    </div>
+                    <div class="columns">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea name="mensaje" tabindex="5" required></textarea>
+                    </div>
 
 
-            </form>
+                    <div class="contact__form__container__btn">
+                        <button name="submit" type="reset"
+                            class="btn contact__form__primary__btn contact__form__secondary__btn">Limpiar
+                            Campos</button>
+                        <button name="submit" type="submit" class="btn contact__form__primary__btn">Enviar</button>
+                    </div>
+
+
+                </form>
+            </div>
+
+
         </div>
-
-
-    </div>
-
-
+    </section>
     <a href="https://api.whatsapp.com/send?phone=5491134765910&text=Hola!%20Quisiera%20asesorarme%20por%20las%20sesiones%20de%20Kinesiologia%20y%20Fisiatria%20"
         target="_blank" rel="noreferrer" title="Turnos por WhatsApp">
         <div class="banner__whatsapp">
@@ -231,14 +291,29 @@
         </div>
     </a>
     <!-- --------------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <!-- --------------SPONSOR-------------- -->
+    <div class="">
+        <div class="sponsor__container">
+            <div class="sponsor__container__img"></div>
+        </div>
+    </div>
+    <!-- --------------FIN SPONSOR-------------- -->
+    <div class="separator separator2"></div>
+
+
+    <!-- --------------------------------------------------------------------------------------------------------------------------- -->
+
+
     <footer>
         <div class="footer" id="footer">
-            <div><a href="#top" title="Ir arriba"><img class="navBar__logo navBar__logo__hover"
+            <div><a href="#top" title="Ir arriba"><img class="navBar__logo navBar__logo_footer navBar__logo__hover"
                         src="./assets/logos/LogoHeader.png" /></a>
             </div>
             <ul class="navBar__links">
                 <li><a class="navBar__links__active__page" href="#footer">Inicio</a></li>
-                <li><a href="./pages/Biografia.html">Biografía</a></li>
+                <li><a href="./pages/biografia.html">Biografía</a></li>
                 <li><a href="./pages/vision.html">Visión</a></li>
                 <li><a href="./pages/tratamientos.html">Tratamientos</a></li>
                 <li><a href=" #contacto">Contacto</a></li>
@@ -259,13 +334,12 @@
                 </div>
             </div>
 
-
+            <div class="separator separator2 margin__top__2"></div>
             <div class="footer__copyright">
+
                 <p>
                     <script type="text/javascript" src="./js/date.js"></script>
                 </p>
-
-
                 <p>Diseño y Desarrollo por <a href="https://www.giorgioruanova.com/" target="_blank"
                         title="GR Desarrollo" rel="noreferrer">Giorgio
                         Ruanova</a>.</p>
@@ -273,6 +347,17 @@
         </div>
     </footer>
 
+    <!-- ---------------------------------------------WHAPP FIXED--------------------------------------------- -->
+    <a href="https://api.whatsapp.com/send?phone=5491134765910&text=Hola!%20Quisiera%20asesorarme%20por%20las%20sesiones%20de%20Kinesiologia%20y%20Fisiatria%20"
+        target="_blank" rel="noreferrer" title="Realizá tu consulta por WhatsApp">
+        <div class="whatsapp__fixed__icon" target="_blank" rel="noreferrer">
+            <i class="fa-brands fa-whatsapp"></i>
+        </div>
+    </a>
+    <div type="button" class="up__fixed__icon" id="btn-back-to-top" title="Ir Arriba">
+        <i class="fa-solid fa-angle-up"></i>
+    </div>
+    <script type="text/javascript" src="./js/scroll.js"></script>
 
 </body>
 
