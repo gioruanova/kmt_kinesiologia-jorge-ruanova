@@ -10,7 +10,7 @@ function scrollFunction() {
     document.body.scrollTop > 20 ||
     document.documentElement.scrollTop > 20
   ) {
-    mybutton.style.display = "flex";
+    mybutton.style.display = "block";
   } else {
     mybutton.style.display = "";
   }
