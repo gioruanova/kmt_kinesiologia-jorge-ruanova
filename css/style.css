@@ -1,22 +1,22 @@
 :root {
-  --PrimaryBackground: #242323; /* GRIS OSCURO */
-  --SecondaryBackground: #3d3d3d; /* GRIS CLARO */
+  --PrimaryBackground: rgb(36, 35, 35); /* GRIS OSCURO */
+  --SecondaryBackground: rgb(61, 61, 61); /* GRIS CLARO */
 
-  --NavBarColor: #242323f6; /* GRIS OSCURO TRANSPARENTE*/
-  --HeroBanner: #24232383; /* GRIS OSCURO TRANSPARENTE*/
+  --NavBarColor: rgba(36, 35, 35, 0.965); /* GRIS OSCURO TRANSPARENTE*/
+  --HeroBanner: rgba(36, 35, 35, 0.514); /* GRIS OSCURO TRANSPARENTE*/
 
-  --PrimaryColor: #ffffff; /* BLANCO */
-  --SecondaryColor: #d96161; /* NARANJA OSCURO */
-  --ShadowColor: #6b3131; /* NARANJA OSCURO */
-  --3rdColor: #f0bb77; /* NARANJA CLARO */
+  --PrimaryColor: rgb(255, 255, 255); /* BLANCO */
+  --SecondaryColor: rgb(218, 113, 113); /* NARANJA OSCURO */
+  --ShadowColor: rgb(107, 49, 49); /* NARANJA OSCURO */
+  --3rdColor: rgb(240, 187, 119); /* NARANJA CLARO */
 
-  --InstagramColor: #568eed; /* AZUL */
+  --InstagramColor: rgb(86, 142, 237); /* AZUL */
 
-  --WhattsAppColorMobile: #25d366; /*VERDE*/
-  --WhattsAppColorHoverMobile: #1f994b; /*VERDE*/
+  --WhattsAppColorMobile: rgb(37, 211, 102); /*VERDE*/
+  --WhattsAppColorHoverMobile: rgb(31, 153, 75); /*VERDE*/
 
-  --WhattsAppColorDesktop: #d96161; /*NARANJA OSCURO*/
-  --WhattsAppColorHoverDesktop: #f0bb77; /*NARANJA CLARO*/
+  --WhattsAppColorDesktop: rgb(217, 97, 97); /*NARANJA OSCURO*/
+  --WhattsAppColorHoverDesktop: rgb(240, 187, 119); /*NARANJA CLARO*/
 
   --PrimaryFont: "Roboto", sans-serif; /* TEXTS */
   --SecondaryFont: "Encode Sans SC", sans-serif; /* LOGO */
@@ -48,7 +48,7 @@ html {
   height: 100vh;
   color: var(--PrimaryColor);
   background: var(--PrimaryBackground);
-  /* background: grey; */
+  box-sizing: border-box;
 }
 
 ul {
@@ -100,6 +100,7 @@ header {
 }
 .navBar__redes__top i:hover {
   color: var(--PrimaryColor);
+  transform: scale(1.09);
 }
 
 @media (min-width: 320px) {
@@ -109,7 +110,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    background-color: #6b3131;
+    background-color: rgb(107, 49, 49);
     padding: 0.5rem 0;
   }
   .navBar {
@@ -245,6 +246,7 @@ header {
   }
   .navBar__redes i:hover {
     color: var(--3rdColor);
+    transform: scale(1.09);
   }
 
   .navBar__redes {
@@ -398,7 +400,7 @@ header {
       background-color: var(--WhattsAppColorMobile);
       border-radius: 50%;
       transition: var(--Transitions);
-      z-index: 2;
+      z-index: 9999;
       box-shadow: 0px -0px 10px var(--WhattsAppColorHoverMobile);
     }
 
@@ -463,7 +465,7 @@ header {
     text-align: center;
     margin: 0 auto;
     width: 100%;
-    background-color: #7b7575;
+    background-color: rgb(123, 117, 117);
     height: 0.2rem;
     box-shadow: 0px -5px 10px rgba(255, 255, 255, 0.308);
   }
@@ -735,7 +737,7 @@ header {
       gap: 5rem;
     }
     .hero__banner__blur {
-      background-color: #242424a6;
+      background: linear-gradient(to left, #b372728f, rgba(0, 0, 0, 0.603));
       backdrop-filter: blur(5px);
       -webkit-backdrop-filter: blur(5px);
       height: 100vh;
@@ -1110,8 +1112,8 @@ header {
     .contact__form input,
     .contact__form textarea {
       max-width: auto;
-      border: 1px solid #ccc;
-      background: #fff;
+      border: none;
+      background: var(--PrimaryColor);
       margin: 5px 0 20px 0;
       height: 20px;
     }
@@ -1215,7 +1217,7 @@ header {
     gap: 1rem;
   }
   .item__reel {
-    border: 2px solid white;
+    border: 2px solid var(--PrimaryColor);
     width: 100%;
     height: 150px;
     background-position: center;
@@ -1310,3 +1312,20 @@ header {
     opacity: 0;
   }
 }
+
+/* .fade__in__animation__2s {
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-delay: 0;
+  animation-direction: normal;
+  animation-iteration-count: initial;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */

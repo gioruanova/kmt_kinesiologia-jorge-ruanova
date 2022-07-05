@@ -34,6 +34,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 
+
+
     <link
         href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500;600&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap"
         rel="stylesheet">
@@ -44,6 +46,11 @@
     <!-- -------CSS-------- -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- ANIMATE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- -------FIN IMPORTS-------- -->
 
 </head>
@@ -51,7 +58,7 @@
 <body>
 
     <!-- -----ARRANCA TOP NAVBAR----- -->
-    <div class="top__NavBar">
+    <div class="top__NavBar animate__animated animate__fadeIn">
         <div>
             <h2>Maximiliano Torres <span> ~ Kinesiología & Fisiatría</span></h2>
         </div>
@@ -69,7 +76,7 @@
     </div>
     <!-- -----TERMINA TOP NAVBAR----- -->
     <!-- -----ARRANCA NAVBAR----- -->
-    <header>
+    <header class="animate__animated animate__fadeIn">
 
         <nav class="navBar" id="#top">
             <div class="navBar__logo__container">
@@ -113,7 +120,7 @@
 
     <!-- /* ---------SECTION:HERO BANNER--------- */ -->
     <section>
-        <div class="hero__banner">
+        <div class="hero__banner animate__animated animate__fadeIn">
             <div class="hero__banner__blur">
                 <div class="hero__banner__flex">
                     <img class="hero__banner__logo" src="assets/logos/LogoHeader.png" />
@@ -141,11 +148,12 @@
     <!-- /* ---------SECTION:BIO--------- */ -->
 
     <main>
-        <div class="container__color__light container__color__dark ">
+        <div class="container__color__light container__color__dark">
 
             <div class="card__container ">
                 <!-- CARD 1 -->
-                <div class="card">
+                <div class="card" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="800"
+                    data-aos-delay="50" data-aos-once="true" data-aos-anchor-placement="bottom-bottom">
                     <h3 class="main__titles"><span>B</span>iografía</h3>
                     <div class="card__icon">
                         <i class="fa-solid fa-user"></i>
@@ -159,7 +167,8 @@
                 </div>
 
                 <!-- CARD 2 -->
-                <div class="card">
+                <div class="card" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-duration="800"
+                    data-aos-delay="100" data-aos-once="true" data-aos-anchor-placement="bottom-bottom">
                     <h3 class="main__titles"><span>V</span>isión</h3>
                     <div class="card__icon">
                         <i class="fa-solid fa-list-check"></i>
@@ -184,8 +193,12 @@
             class="container__color__light container__color__dark container__color__dark__separator container__color__allign__center">
             <div class="separator"></div>
             <div class="separator__frase">
-                <img src="./assets/ImgPicture1.png" class="separator__frase__img"></img>
-                <div class="separator__frase__title">
+                <img src="./assets/ImgPicture1.png" class="separator__frase__img" data-aos="fade-right"
+                    data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="50" data-aos-once="true"
+                    data-aos-anchor-placement="bottom-bottom"></img>
+                <div class="separator__frase__title" data-aos="fade-left" data-aos-easing="ease-in-out"
+                    data-aos-duration="800" data-aos-delay="500" data-aos-once="true"
+                    data-aos-anchor-placement="bottom-bottom">
                     <h3 class="main__titles"><span>Maximiliano</span>Torres</h3>
                     <h4 class="main__subtitles">Licenciado en Kinesiología & Fisiatría.</h4>
                     <div class="separator__frase__texto">
@@ -204,7 +217,8 @@
 
     <!-- /* ---------SECTION:GALLERY--------- */ -->
 
-    <article>
+    <article data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="50"
+        data-aos-once="true" data-aos-anchor-placement="center-bottom">
         <div class="container__color__light container__color__dark padding__bottom__0">
             <h3 class="main__titles"><span>E</span>ntrenamientos & Terapias</h3>
             <div class="follow">
@@ -257,7 +271,8 @@
 
     <!-- /* ---------SECTION:FORM--------- */ -->
 
-    <section>
+    <section data-aos="zoom-in-left" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="50"
+        data-aos-once="true" data-aos-anchor-placement="center-bottom">
         <div class="container__color__light container__color__dark container__color__allign__center" id="contacto">
             <h3 class="main__titles"><span>C</span>ontacto</h3>
             <h4 class="main__subtitles margin__top_1rem">Realiza tu consulta y asesorate sobre los diferentes
@@ -373,7 +388,10 @@
         </div>
     </a>
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 
