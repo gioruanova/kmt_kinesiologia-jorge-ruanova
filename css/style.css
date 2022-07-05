@@ -723,7 +723,6 @@ header {
   @media (min-width: 320px) {
     .card {
       border-radius: 4px;
-      padding: 0.5rem;
       display: grid;
       grid-template-rows: 50px 200px auto-fill 50px;
       justify-items: center;
@@ -891,7 +890,6 @@ header {
       border-radius: 50%;
       color: var(--SecondaryBackground);
       font-size: 3rem;
-      padding: 0.5rem;
       height: 5rem;
       width: 5rem;
       margin: 2rem 0;
