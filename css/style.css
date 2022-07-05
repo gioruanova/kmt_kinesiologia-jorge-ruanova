@@ -110,7 +110,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    background-color: rgb(107, 49, 49);
+    background: linear-gradient(to right, var(--ShadowColor), var(--PrimaryBackground));
     padding: 0.5rem 0;
   }
   .navBar {
@@ -1372,19 +1372,128 @@ header {
   }
 }
 
-/* .fade__in__animation__2s {
-  animation-duration: 2s;
-  animation-name: aparecer;
+/* -------ANIMACIONES------- */
+
+.translate__animation {
+  animation-duration: 900ms;
+  animation-name: desplazar;
   animation-delay: 0;
   animation-direction: normal;
   animation-iteration-count: initial;
 }
 
-@keyframes aparecer {
+@keyframes desplazar {
+  0% {
+    opacity: 0;
+    transform: translate(150px, 0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.translate__animation__left {
+  animation-duration: 900ms;
+  animation-name: desplazar2;
+  animation-delay: 0;
+  animation-direction: normal;
+  animation-iteration-count: initial;
+}
+
+@keyframes desplazar2 {
+  0% {
+    opacity: 0;
+    transform: translate(-150px, 0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.translate__animation__up {
+  animation-duration: 600ms;
+  animation-name: arriba;
+  animation-delay: 0;
+  animation-direction: normal;
+  animation-iteration-count: initial;
+}
+
+@keyframes arriba {
+  0% {
+    opacity: 0;
+    transform: translate(0, -90px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.translate__animation__main__1 {
+  animation-duration: 2s;
+  animation-name: side1;
+  animation-delay: 0;
+  animation-direction: normal;
+  animation-iteration-count: initial;
+}
+
+@keyframes side1 {
+  0% {
+    opacity: 0;
+    transform: translate(-90px, 0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.translate__animation__main__2 {
+  animation-duration: 2s;
+  animation-name: side2;
+  animation-delay: 0;
+  animation-direction: normal;
+  animation-iteration-count: initial;
+}
+
+@keyframes side2 {
+  0% {
+    opacity: 0;
+    transform: translate(180px, 0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.translate__animation__main__3 {
+  animation-duration: 4s;
+  animation-name: side3;
+  animation-delay: 0;
+  animation-direction: normal;
+  animation-iteration-count: initial;
+}
+
+@keyframes side3 {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
   }
-} */
+}
+
+.scale__animation__main__whapp {
+  animation-duration: 300ms;
+  animation-name: whapp;
+  animation-delay: 0;
+  animation-direction: normal;
+  animation-iteration-count: initial;
+}
+
+@keyframes whapp {
+  0% {
+    opacity: 0;
+    transform: scale(2.1);
+  }
+  100% {
+    opacity: 1;
+  }
+}
