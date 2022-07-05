@@ -116,6 +116,7 @@ header {
       var(--PrimaryBackground)
     );
     padding: 0.5rem 0;
+    transition: var(--Transitions);
   }
   .navBar {
     display: none;
