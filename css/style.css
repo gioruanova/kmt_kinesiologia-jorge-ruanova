@@ -860,6 +860,19 @@ header {
       padding: 0 1rem;
       margin-bottom: 10px;
     }
+    .card__icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--SecondaryColor);
+      border-radius: 50%;
+      color: var(--SecondaryBackground);
+      font-size: 3rem;
+      padding: 0.5rem;
+      height: 5rem;
+      width: 5rem;
+      margin: 2rem 0;
+    }
   }
 
   @media (min-width: 768px) {
@@ -922,6 +935,11 @@ header {
     .bullets__container {
       padding: 0 0rem 1rem 0;
     }
+    .card__icon {
+      font-size: 5rem;
+      padding: 2rem;
+ 
+    }
   }
 
   @media (min-width: 1024px) {
@@ -973,19 +991,7 @@ header {
     }
   }
 
-  .card__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--SecondaryColor);
-    border-radius: 50%;
-    color: var(--SecondaryBackground);
-    font-size: 3rem;
-    padding: 0.5rem;
-    height: 5rem;
-    width: 5rem;
-    margin: 2rem 0;
-  }
+
 
   /* ---------SECTION:HERO BANNER--------- */
 
