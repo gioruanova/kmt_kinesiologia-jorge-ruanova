@@ -110,7 +110,11 @@ header {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    background: linear-gradient(to right, var(--ShadowColor), var(--PrimaryBackground));
+    background: linear-gradient(
+      to right,
+      var(--ShadowColor),
+      var(--PrimaryBackground)
+    );
     padding: 0.5rem 0;
   }
   .navBar {
@@ -1386,6 +1390,7 @@ header {
   0% {
     opacity: 0;
     transform: translate(150px, 0);
+    -webkit-transform: translate(150px, 0);
   }
   100% {
     opacity: 1;
@@ -1404,6 +1409,7 @@ header {
   0% {
     opacity: 0;
     transform: translate(-150px, 0);
+    -webkit-transform: translate(-150px, 0);
   }
   100% {
     opacity: 1;
@@ -1422,6 +1428,7 @@ header {
   0% {
     opacity: 0;
     transform: translate(0, -90px);
+    -webkit-transform: translate(0, -90px);
   }
   100% {
     opacity: 1;
@@ -1440,6 +1447,7 @@ header {
   0% {
     opacity: 0;
     transform: translate(-90px, 0);
+    -webkit-transform: translate(-90px, 0);
   }
   100% {
     opacity: 1;
@@ -1458,6 +1466,7 @@ header {
   0% {
     opacity: 0;
     transform: translate(180px, 0);
+    -webkit-transform: translate(180px, 0);
   }
   100% {
     opacity: 1;
@@ -1492,6 +1501,7 @@ header {
   0% {
     opacity: 0;
     transform: scale(2.1);
+    -webkit-transform: scale(2.1);
   }
   100% {
     opacity: 1;
