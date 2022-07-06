@@ -41,12 +41,13 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <!-- ANIMATE -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- -------FIN IMPORTS-------- -->
+
 </head>
 
 <body>
 
-
-    <!-- -----ARRANCA TOP NAVBAR----- -->
+    <!-- -----TOP NAVBAR REDES----- -->
     <div class="top__NavBar translate__animation__up">
         <div>
             <h2>MaximilianoTorres <span> ~ Kinesiología & Fisiatría</span></h2>
@@ -63,16 +64,15 @@
                     class="fa-brands fa-instagram"></i></a>
         </div>
     </div>
-    <!-- -----TERMINA TOP NAVBAR----- -->
-    <!-- -----ARRANCA NAVBAR----- -->
-    <header>
+    <!-- -----END NAVBAR REDES----- -->
 
+
+    <!-- -----MAIN NAVBAR DESKTOP----- -->
+    <header>
         <nav class="navBar animate__animated animate__fadeIn" id="#top">
             <a href="../index.html" class="navBar__logo__hover" title="Ir a Inicio">
                 <div class="navBar__logo__container translate__animation__left">
-
                     <img class="navBar__logo navBar__logo__index" src="../assets/logos/LogoHeader.png" />
-
                 </div>
             </a>
             <div class="navBar__right__content">
@@ -83,28 +83,44 @@
                     <li><a href="tratamientos.html">Tratamientos</a></li>
                     <li><a class="btn navBar__btn__mobile" href="contacto.html">Contacto</a></li>
                 </ul>
-
             </div>
             </div>
         </nav>
     </header>
-    <!-- -----TERMINA NAVBAR----- -->
-    <!-- -----EMPIEZA MOBILE NAVBAR----- -->
-    <div class="burger__mobile">
-        <i class="fa-solid fa-bars-staggered"></i>
+    <!-- -----END MAIN NAVBAR DESKTOP----- -->
+
+
+    <!-- -----NAVBAR MOBILE----- -->
+    <div class="burger__mobile scale__animation__main__whapp">
+        <a href="#mobile__menu__modal">
+            <i class="fa-solid fa-bars-staggered"></i>
+        </a>
     </div>
-    <nav class="navBarMobile" id="#top">
-        <div class="navBarMobile__right__content">
-            <ul class="navBar__links ">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a class="navBar__links__active__page" href="#">Biografía</a></li>
-                <li><a href="vision.html">Visión</a></li>
-                <li><a href="tratamientos.html">Tratamientos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+    <div class="mobile__menu__modal" id="mobile__menu__modal">
+        <div>
+            <div class="burger__mobile ">
+                <a href="#close">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+            </div>
+            <nav>
+                <div class="navBarMobile__right__content">
+                    <ul class="navBar__links navBar__links__mobile">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a class="navBar__links__active__page" href="#">Biografía</a></li>
+                        <li><a href="vision.html">Visión</a></li>
+                        <li><a href="tratamientos.html">Tratamientos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-    </nav>
-    <!-- -----TERMINA MOBILE NAVBAR----- -->
+
+    </div>
+    <!-- -----END NAVBAR MOBILE----- -->
+
+
+    <!-- /* ---------SITE ROUTES MAP--------- */ -->
     <section class="container__nav__map__background animate__animated animate__fadeIn">
         <div class="container__nav__map__background__blur">
             <div class="container__nav__map__container">
@@ -113,19 +129,16 @@
         </div>
         <div class="separator separator2"></div>
     </section>
+    <!-- /* ---------SITE ROUTES MAP--------- */ -->
 
 
-    <!-- /* ---------SECTION:BIO--------- */ -->
-
+    <!-- /* ---------END BIO DATA--------- */ -->
     <div class="container__color__light container__sections__padding__sides animate__animated animate__fadeIn">
         <h3 class="main__titles"><span>M</span>aximiliano Torres</h3>
         <h4 class="main__subtitles">Licenciado en Kinesiología y Fisiatría.</h4>
-
         <div class="biografia__container margin__top_3rem">
             <div class="biografia__imagen" alt=" Maximiliano Torres"></div>
-
             <div class="container__texto1 biografia__texto">
-
                 <p class="main__paragraph">Mi nombre es Maximiliano Torres, soy licenciado en Kinesiología
                     y
                     Fisiatría,
@@ -133,7 +146,6 @@
                     en el
                     Instituto Universitario de Ciencias de la Salud, Fundación H. A. Barceló (Argentina), enfocado
                     tanto en la terapia por lesiones y deportiva.</p>
-
                 <p class="main__paragraph">No les puedo mentir, mi sueño de chico era ser bombero o policía, pero
                     con el
                     correr
@@ -144,10 +156,7 @@
                     ámbito de la rehabilitación despertó en mí la curiosidad de conocer más y con eso poder ayudar a
                     la
                     gente.</p>
-
             </div>
-
-
             <div class="container__texto2 biografia__texto">
                 <p class="main__paragraph">Todo esto me hizo llegar a estudiar esta hermosa carrera y ejercer esta
                     gran
@@ -163,28 +172,24 @@
                     gimnasio o
                     en mi consultorio.
                 </p>
-
                 <p class="main__paragraph">Actualmente me encuentro brindando servicios de rehabilitacion,
                     correccion de
                     postura, ejercitacion y
                     realizando una especializacion posturologia (RPG).
                 </p>
-
-
                 <p class="main__paragraph">Te invito a que conozcas mis trabajos donde podras observar mi enfoque y
                     metodologia.
                 </p>
-
-
                 <p class="main__paragraph">Podes asesorarte o realizarme cualquier tipo de consulta a través de mis
                     distintas redes.
                 </p>
             </div>
-
-
         </div>
-        <div class="footer__social">
+        <!-- /* ---------END BIO DATA--------- */ -->
 
+
+        <!-- /* ---------END SCOCIAL CONTACT--------- */ -->
+        <div class="footer__social">
             <div class="navBar__redes">
                 <a href="mailto:mtorres363@gmail.com" target="_blank" rel="noreferrer" title="E-Mail">
                     <i class="fa-regular fa-envelope"></i>
@@ -199,9 +204,10 @@
         </div>
 
     </div>
-    <!-- --------------------------------------------------------------------------------------------------------------------------- -->
-    <!-- --------------------------------------------------------------------------------------------------------------------------- -->
-    <!-- /* ---------FRASE--------- */ -->
+    <!-- /* ---------END SCOCIAL CONTACT--------- */ -->
+
+
+    <!-- /* ---------MIDDLE BANNER--------- */ -->
     <section>
         <div
             class="container__color__light container__color__dark container__color__dark__separator container__color__allign__center">
@@ -220,8 +226,10 @@
 
         </div>
     </section>
-    <!-- /* ---------FINFRASE--------- */ -->
-    <!-- --------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- /* ---------END MIDDLE BANNER--------- */ -->
+
+
+    <!-- /* ---------WHAPP BANNER--------- */ -->
     <div class="separator "></div>
     <a href="https://api.whatsapp.com/send?phone=5491134765910&text=Hola!%20Quisiera%20asesorarme%20por%20las%20sesiones%20de%20Kinesiologia%20y%20Fisiatria%20"
         target="_blank" rel="noreferrer" title="Turnos por WhatsApp">
@@ -230,15 +238,24 @@
             <i class="fa-brands fa-whatsapp banner"></i>
         </div>
     </a>
-    <!-- --------------SPONSOR-------------- -->
+    <!-- /* ---------END WHAPP BANNER--------- */ -->
+
+
+    <!-- --------------END BRAND SECTIONS-------------- -->
     <div class="">
         <div class="sponsor__container">
             <div class="sponsor__container__img"></div>
         </div>
     </div>
-    <!-- --------------FIN SPONSOR-------------- -->
+    <!-- --------------END BRAND SECTIONS-------------- -->
+
+
+    <!-- --------------SINGLE SEPARATOR-------------- -->
     <div class="separator separator2"></div>
-    <!-- --------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- --------------SINGLE SEPARATOR-------------- -->
+
+
+    <!-- --------------END FOOTER-------------- -->
     <footer>
         <div class="footer">
             <div><a href="#top" title="Ir arriba"><img class="navBar__logo navBar__logo_footer navBar__logo__hover"
@@ -251,7 +268,6 @@
                 <li><a href="tratamientos.html">Tratamientos</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
-
             <div class="footer__social">
                 <p>Seguime en mis redes:</p>
                 <div class="navBar__redes">
@@ -266,29 +282,30 @@
                         title="Instagra"> <i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
-
             <div class="separator separator2 margin__top__2"></div>
             <div class="footer__copyright">
                 <p>
                     <script type="text/javascript" src="../js/date.js"></script>
                 </p>
-
-
                 <p>Diseño y Desarrollo por <a href="https://www.giorgioruanova.com/" target="_blank"
                         title="GR Desarrollo" rel="noreferrer">Giorgio
                         Ruanova</a>.</p>
             </div>
         </div>
     </footer>
+    <!-- --------------END FOOTER-------------- -->
 
+
+    <!-- --------------WHAPP ICON FIXED-------------- -->
     <a href="https://api.whatsapp.com/send?phone=5491134765910&text=Hola!%20Quisiera%20asesorarme%20por%20las%20sesiones%20de%20Kinesiologia%20y%20Fisiatria%20"
         target="_blank" rel="noreferrer" title="Realizá tu consulta por WhatsApp">
         <div class="whatsapp__fixed__icon scale__animation__main__whapp" target="_blank" rel="noreferrer">
             <i class="fa-brands fa-whatsapp"></i>
         </div>
     </a>
+    <!-- --------------END WHAPP ICON FIXED-------------- -->
+
 
 </body>
-
 
 </html>

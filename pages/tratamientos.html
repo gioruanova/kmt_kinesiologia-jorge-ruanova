@@ -92,20 +92,32 @@
 
     <!-- -----TERMINA NAVBAR----- -->
     <!-- -----EMPIEZA MOBILE NAVBAR----- -->
-    <div class="burger__mobile">
-        <i class="fa-solid fa-bars-staggered"></i>
+    <div class="burger__mobile scale__animation__main__whapp">
+        <a href="#mobile__menu__modal">
+            <i class="fa-solid fa-bars-staggered"></i>
+        </a>
     </div>
-    <nav class="navBarMobile" id="#top">
-        <div class="navBarMobile__right__content">
-            <ul class="navBar__links ">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="Biografia.html">Biografía</a></li>
-                <li><a href="vision.html">Visión</a></li>
-                <li><a class="navBar__links__active__page" href="#">Tratamientos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+    <div class="mobile__menu__modal" id="mobile__menu__modal">
+        <div>
+            <div class="burger__mobile ">
+                <a href="#close">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+            </div>
+            <nav>
+                <div class="navBarMobile__right__content">
+                    <ul class="navBar__links navBar__links__mobile">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="biografia.html">Biografía</a></li>
+                        <li><a href="vision.html">Visión</a></li>
+                        <li><a class="navBar__links__active__page" href="#">Tratamientos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-    </nav>
+
+    </div>
     <!-- -----TERMINA MOBILE NAVBAR----- -->
 
     <section class="container__nav__map__background animate__animated animate__fadeIn">
@@ -138,7 +150,7 @@
                         <span>T</span>ratamiento 1
                     </h4>
                     <a href="#tratamiento1">
-                        <button class="btn btn__navigation__link " title="Conocer maás detalles">Leer Más</button>
+                        <button class="btn btn__navigation__link " title="Conocer maás detalles">Leer Más <i class="fa-solid fa-angle-right"></i></button>
                     </a>
                 </div>
                 <div id="tratamiento1" class="modal__dialog">
@@ -164,7 +176,7 @@
                         <span>T</span>ratamiento 2
                     </h4>
                     <a href="#tratamiento2">
-                        <button class="btn btn__navigation__link" title="Conocer maás detalles">Leer Más</button>
+                        <button class="btn btn__navigation__link" title="Conocer maás detalles">Leer Más <i class="fa-solid fa-angle-right"></i></button>
                     </a>
                 </div>
                 <div id="tratamiento2" class="modal__dialog">
@@ -190,7 +202,7 @@
                         <span>T</span>ratamiento 3
                     </h4>
                     <a href="#tratamiento3">
-                        <button class="btn btn__navigation__link" title="Conocer maás detalles">Leer Más</button>
+                        <button class="btn btn__navigation__link" title="Conocer maás detalles">Leer Más <i class="fa-solid fa-angle-right"></i></button>
                     </a>
                 </div>
                 <div id="tratamiento3" class="modal__dialog">
@@ -297,7 +309,7 @@
     <a href="https://api.whatsapp.com/send?phone=5491134765910&text=Hola!%20Quisiera%20asesorarme%20por%20las%20sesiones%20de%20Kinesiologia%20y%20Fisiatria%20"
         target="_blank" rel="noreferrer" title="Realizá tu consulta por WhatsApp">
         <div class="whatsapp__fixed__icon scale__animation__main__whapp" target="_blank" rel="noreferrer">
-            <i class="fa-brands fa-whatsapp " ></i>
+            <i class="fa-brands fa-whatsapp "></i>
         </div>
     </a>
 
