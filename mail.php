@@ -1,17 +1,20 @@
 <?php
-//get data from form  
-$name = $_POST['name'];
-$email= $_POST['email'];
-$message= $_POST['message'];
-$whatsapp= $_POST['whatsapp'];
-$to = "jruanova1987@gmail.com";
-$subject = "Mail From website";
-$txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Message ="  . $whatsapp . "\r\n whatsapp =". $message;
-$headers = "From: noreply@yoursite.com" . "\r\n" .
-"CC: somebodyelse@example.com";
-if($email!=NULL){
-    mail($to,$subject,$txt,$headers);
+
+if (isset($_POST['submit'])) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    $whatsapp = $_POST['whatsapp'];
+    
+    $email_subject = "NEW MESSAGE VIA CONTACT FORM";
+    
+    $email_body = "You have received a new message from the user ".$name. ".\n".$message; ".\n".$whatsapp;
+    
+    $to = "jruanova1987@gmail.com"
+    $headers = "From: ";
+    $headers .= $visitor_email;
+    
+    mail($to, $email_subject, $email_body, $headers);
+    header('Location: ../');
 }
-//redirect
-header("Location:thankyou.html");
 ?>
