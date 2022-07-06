@@ -279,36 +279,34 @@
             </h4>
 
             <div class="contact__form__container">
-                <form action="" method="post" enctype="text/plain" class="contact__form">
-
+                <form action="mail.php" method="post" class="contact__form contact__form__dark">
+    
                     <div class="columns">
                         <label for="name">Nombre: </label>
-                        <input name="name" type="text" required>
+                        <input name="name" type="text" tabindex="1" required autofocus>
                     </div>
-
+    
                     <div class="columns">
                         <label for="email">E-mail: </label>
                         <input name="email" type="email" tabindex="2" required>
                     </div>
-
+    
                     <div class="columns">
                         <label for="whatsapp">WhatsApp: </label>
-                        <input type="tel" tabindex="3" required>
+                        <input name="whatsapp" type="tel" tabindex="3" required>
                     </div>
+    
                     <div class="columns">
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea name="mensaje" tabindex="5" required></textarea>
+                        <label for="message">Mensaje:</label>
+                        <textarea name="message" tabindex="5" required></textarea>
                     </div>
-
-
+    
+    
                     <div class="contact__form__container__btn">
                         <button name="submit" type="reset"
-                            class="btn contact__form__primary__btn contact__form__secondary__btn">Limpiar
-                            Campos</button>
+                            class="btn contact__form__primary__btn contact__form__secondary__btn">Limpiar Campos</button>
                         <button name="submit" type="submit" class="btn contact__form__primary__btn">Enviar</button>
                     </div>
-
-
                 </form>
             </div>
 

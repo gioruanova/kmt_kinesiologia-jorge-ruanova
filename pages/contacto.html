@@ -126,7 +126,7 @@
 
 
         <div class="contact__form__container">
-            <form action="" method="post" enctype="text/plain" class="contact__form contact__form__dark">
+            <form action="mail.php" method="post" class="contact__form contact__form__dark">
 
                 <div class="columns">
                     <label for="name">Nombre: </label>
@@ -140,12 +140,12 @@
 
                 <div class="columns">
                     <label for="whatsapp">WhatsApp: </label>
-                    <input type="tel" tabindex="3" required>
+                    <input name="whatsapp" type="tel" tabindex="3" required>
                 </div>
 
                 <div class="columns">
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea name="mensaje" tabindex="5" required></textarea>
+                    <label for="message">Mensaje:</label>
+                    <textarea name="message" tabindex="5" required></textarea>
                 </div>
 
 
@@ -154,13 +154,7 @@
                         class="btn contact__form__primary__btn contact__form__secondary__btn">Limpiar Campos</button>
                     <button name="submit" type="submit" class="btn contact__form__primary__btn">Enviar</button>
                 </div>
-
-
             </form>
-
-
-
-
         </div>
 
 
