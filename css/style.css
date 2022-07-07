@@ -290,6 +290,8 @@ header {
   background-color: var(--PrimaryColor) !important;
   padding: 5px 15px;
   border-radius: 5px;
+  color: var(--PrimaryBackground) !important;
+  border: none;
 }
 
 .btn__navigation__link {
@@ -417,6 +419,7 @@ header {
   padding: 5px 15px;
   border-radius: 5px;
   margin-top: 1rem;
+  border: none;
 }
 
 @media (min-width: 768px) {
@@ -797,6 +800,7 @@ header {
 .separator__frase__title .main__titles {
   font-size: 1.4rem;
   padding: 0;
+  text-shadow: none;
 }
 
 .separator__frase__title .main__subtitles {
