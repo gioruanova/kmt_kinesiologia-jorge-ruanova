@@ -887,6 +887,7 @@ header {
   align-items: flex-start;
   padding: 0 1rem;
   margin-bottom: 10px;
+  gap: 10px;
 }
 .card__icon {
   display: flex;
