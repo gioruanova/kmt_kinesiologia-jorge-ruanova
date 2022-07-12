@@ -1556,6 +1556,11 @@ header {
   animation-delay: 0;
   animation-direction: normal;
   animation-iteration-count: infinite;
+  -webkit-animation-duration: all 2s;
+  -webkit-animation-name: animationchallenge;
+  -webkit-animation-delay: 0;
+  -webkit-animation-direction: normal;
+  -webkit-animation-iteration-count: infinite;
 }
 
 @keyframes animationchallenge {
