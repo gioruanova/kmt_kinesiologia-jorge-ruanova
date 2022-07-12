@@ -9,7 +9,7 @@ Coderhouse project
 - [@GiorgioRuanova](https://www.giorgioruanova.com/)
 
 
-![Logo](https://www.giorgioruanova.com/static/media/DarkPNG.0c0a55e9.png)
+![Logo](https://www.giorgioruanova.com/meta.png)
 
 
 ## 🚀 About Me
