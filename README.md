@@ -4,7 +4,7 @@
 Coderhouse project
 
 
-## Authors
+:technologist: ## Authors
 
 - [@GiorgioRuanova](https://www.giorgioruanova.com/)
 
