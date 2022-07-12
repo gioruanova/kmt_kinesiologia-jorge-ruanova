@@ -1,10 +1,10 @@
 
-# Kinesiologia Maximiliano Torres 
+💻 # Kinesiologia Maximiliano Torres 
 
 Coderhouse project
 
 
-:technologist: ## Authors
+🧑‍💻 ## Authors
 
 - [@GiorgioRuanova](https://www.giorgioruanova.com/)
 
