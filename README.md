@@ -12,7 +12,7 @@ Coderhouse project
 ![Logo](https://www.giorgioruanova.com/meta.png)
 
 
-## 🚀 About Me
+## 🚀 :rocket: About Me
 Frontend developer under proces every day....
 
 
