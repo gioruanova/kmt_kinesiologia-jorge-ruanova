@@ -1552,3 +1552,26 @@ header {
 
 
 
+/* -----animation__challenge TO BE DELETED----- */
+.animation__challenge {
+  animation-duration: all 2s;
+  animation-name: animationchallenge;
+  animation-delay: 0;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animationchallenge {
+  0% {
+    transition: 1s;
+    text-shadow: 2px 1px 2px var(--3rdColor);
+    opacity: 0;
+  }
+  
+  100% {
+    transition: 1s;
+    text-shadow: 2px 1px 2px var(--3rdColor);
+    opacity: 1;
+  }
+}
+/* -----animation__challenge TO BE DELETED----- */
