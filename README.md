@@ -26,4 +26,4 @@ HTML, CSS & Javascript
 [![instagram](https://img.shields.io/badge/instagram-ff9400?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/gioruanova.dev/)
 
 
-Readme document created using [Readme SO](https://readme.so/es). Credits by [Katherine Oelsner](https://github.com/octokatherine)
+## Readme document created using [Readme SO](https://readme.so/es). Credits by [Katherine Oelsner](https://github.com/octokatherine)
