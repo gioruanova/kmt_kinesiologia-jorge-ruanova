@@ -1,10 +1,10 @@
 
-💻 # Kinesiologia Maximiliano Torres 
+## :page_with_curl: Kinesiologia Maximiliano Torres 
 
 Coderhouse project
 
 
-🧑‍💻 ## Authors
+## :computer: Authors
 
 - [@GiorgioRuanova](https://www.giorgioruanova.com/)
 
@@ -12,7 +12,7 @@ Coderhouse project
 ![Logo](https://www.giorgioruanova.com/meta.png)
 
 
-## 🚀 :rocket: About Me
+## 🚀 About Me
 Frontend developer under proces every day....
 
 
