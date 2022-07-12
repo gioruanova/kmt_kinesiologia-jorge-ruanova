@@ -16,8 +16,8 @@ Coderhouse project
 Frontend developer under proces every day....
 
 
-## 🛠 Skills
-Javascript, React JS, API's, AXIOS, HTML, Bootstrap, CSS/SASS...
+## 🛠 Skills used
+HTML, CSS & Javascript
 
 
 ## 🔗 Links
