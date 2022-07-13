@@ -13,7 +13,7 @@ Coderhouse project
 
 
 ## 🚀 About Me
-Frontend developer under proces every day....
+Frontend developer in progress every day....
 
 
 ## 🛠 Skills used
