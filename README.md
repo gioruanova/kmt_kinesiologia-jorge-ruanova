@@ -1,10 +1,10 @@
 
-# Kinesiologia Maximiliano Torres 
+## :page_with_curl: Kinesiologia Maximiliano Torres 
 
 Coderhouse project
 
 
-## Authors
+## :computer: Authors
 
 - [@GiorgioRuanova](https://www.giorgioruanova.com/)
 
@@ -13,7 +13,7 @@ Coderhouse project
 
 
 ## 🚀 About Me
-Frontend developer under proces every day....
+Frontend developer in progress every day....
 
 
 ## 🛠 Skills used
@@ -26,4 +26,5 @@ HTML, CSS & Javascript
 [![instagram](https://img.shields.io/badge/instagram-ff9400?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/gioruanova.dev/)
 
 
+## ReadMe 
 Readme document created using [Readme SO](https://readme.so/es). Credits by [Katherine Oelsner](https://github.com/octokatherine)
