@@ -50,6 +50,10 @@ html {
   background: var(--PrimaryBackground);
   box-sizing: border-box;
 }
+body {
+  background: var(--PrimaryBackground);
+  color: var(--PrimaryColor);
+}
 
 ul {
   list-style: none;
@@ -228,7 +232,7 @@ header {
 
 .navBar__links a {
   color: var(--PrimaryColor);
-  font-size: 16px;
+  font-size: 1rem;
   transition: var(--Transitions);
   margin: 0;
 }
@@ -274,8 +278,9 @@ header {
   text-align: center;
   padding: 6px 20px;
   white-space: nowrap;
-  font-size: 16px;
+  font-size: 1rem;
   border: 2px solid var(--SecondaryColor);
+  border-radius: 2px;
 }
 
 .hero__banner__btn {
@@ -496,7 +501,7 @@ header {
 }
 
 .whatsapp__fixed__icon i {
-  font-size: 30px;
+  font-size: 2rem;
   color: var(--PrimaryColor);
 }
 
@@ -534,7 +539,7 @@ header {
   padding: 0 1rem;
 }
 .main__titles__cards {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-family: var(--SecondaryFont);
   font-style: italic;
   margin: 0.5rem 0 1rem 0;
@@ -558,7 +563,7 @@ header {
     text-align: center;
   }
   .main__titles__cards {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 }
 @media (min-width: 1024px) {
@@ -604,8 +609,8 @@ header {
   letter-spacing: 1px;
   word-spacing: 3px;
   text-align: justify;
-  padding: 0 1rem;
   margin: 0;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -624,9 +629,6 @@ header {
     font-weight: 200;
     letter-spacing: 1px;
     word-spacing: 3px;
-    text-align: justify;
-    padding: 0;
-    margin: 0;
   }
 }
 
@@ -646,6 +648,9 @@ header {
   }
   .container__sections__padding__sides {
     padding: 5rem 10rem;
+  }
+  .main__paragraph {
+    text-align: left;
   }
 }
 @media (min-width: 1440px) {
@@ -723,24 +728,13 @@ header {
 
 /* ---------SECTION:BIO & VISION--------- */
 
-.card {
-  border-radius: 4px;
-  display: grid;
-  grid-template-rows: 50px 200px auto-fill 50px;
-  justify-items: center;
-  align-items: center;
-  width: 100%;
-  gap: 1rem;
-}
-
-.card__container {
+.main__card {
   display: flex;
-  flex-flow: column;
-  text-align: center;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   gap: 2rem;
 }
+
 .hero__banner__blur {
   background: linear-gradient(to left, #b372728f, rgba(0, 0, 0, 0.603));
   backdrop-filter: blur(3px);
@@ -785,9 +779,7 @@ header {
 .hero__banner__logo {
   width: 8rem;
 }
-.card p {
-  text-align: justify;
-}
+
 .separator__frase {
   display: flex;
   flex-flow: column wrap;
@@ -832,18 +824,6 @@ header {
   border-bottom: 2px solid var(--SecondaryColor);
   font-weight: 800;
 }
-.biografia__container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  justify-items: center;
-  align-items: center;
-  margin-bottom: 1rem;
-  width: 80%;
-  margin: 0 auto;
-  column-gap: 2rem;
-  row-gap: 1rem;
-}
 
 .container__texto1 {
   grid-column: 1/2;
@@ -854,20 +834,6 @@ header {
   grid-row: 3/4;
 }
 
-.biografia__imagen {
-  background-image: url(../assets/imgsMisc/insta1.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 20rem;
-  width: 100%;
-}
-
-.biografia__texto p {
-  grid-row: 2/3;
-  text-align: justify;
-  padding: 0;
-  margin-bottom: 30px;
-}
 .modal__dialog > div {
   width: 85%;
   margin: 40% auto;
@@ -885,7 +851,6 @@ header {
   flex-direction: row;
   justify-content: start;
   align-items: flex-start;
-  padding: 0 1rem;
   margin-bottom: 10px;
   gap: 10px;
 }
@@ -923,18 +888,7 @@ header {
   .hero__banner__logo {
     width: 10rem;
   }
-  .card {
-    width: 80%;
-    gap: 1rem;
-  }
 
-  .card__container {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 3rem;
-  }
-  .card p {
-    text-align: justify;
-  }
   .separator__frase {
     flex-flow: row wrap;
   }
@@ -950,7 +904,7 @@ header {
   }
 
   .separator__frase__texto p {
-    width: 30rem;
+    /* width: 30rem; */
     font-weight: 300;
     text-align: center;
     padding: 0;
@@ -972,22 +926,11 @@ header {
   }
   .card__icon {
     font-size: 5rem;
-    padding: 2rem;
+    padding: 4rem;
   }
 }
 
 @media (min-width: 1024px) {
-  .card {
-    grid-template-rows: 50px 200px 200px 50px;
-    width: 80%;
-    gap: 1rem;
-  }
-  .card__container {
-    flex-flow: row;
-    justify-content: space-around;
-    margin: 0;
-  }
-
   .hero__banner__blur {
     justify-content: flex-end;
     padding: 0 10rem;
@@ -1016,12 +959,6 @@ header {
     max-width: 20rem;
   }
 
-  .biografia__container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    width: 100%;
-    margin: 5rem 0;
-  }
   .container__texto1 {
     grid-column: 2/3;
     grid-row: 1/2;
@@ -1031,15 +968,6 @@ header {
     grid-row: 2/3;
   }
 
-  .biografia__imagen {
-    height: 20rem;
-    background-position: top;
-  }
-
-  .biografia__texto p {
-    grid-row: 2/3;
-    text-align: justify;
-  }
   .modal__dialog > div {
     width: 50%;
     margin: 20% auto;
@@ -1048,9 +976,6 @@ header {
 @media (min-width: 1440px) {
   .hero__banner__blur {
     padding: 0 20rem;
-  }
-  .biografia__imagen {
-    max-height: 15rem;
   }
 }
 
@@ -1082,6 +1007,9 @@ header {
 .margin__top__bottom__3rem {
   margin: 3rem 0;
 }
+.margin__top__bottom__1rem {
+  margin-bottom: 1rem;
+}
 
 .padding__bottom__0 {
   padding-bottom: 0;
@@ -1091,6 +1019,20 @@ header {
   font-style: italic;
 }
 
+.img__foot__text {
+  font-style: italic;
+  font-size: 0.8rem !important;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.padding__sides {
+  padding: 0 1rem;
+}
+
+.row {
+  justify-content: space-evenly;
+}
 /* ---------SECTION: TRATAMIENTOS--------- */
 
 .card__terapias__container {
@@ -1110,7 +1052,7 @@ header {
   bottom: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.8);
-  z-index: 1;
+  /* z-index: 1; */
   opacity: 0;
   pointer-events: none;
   transition: var(--Transitions);
@@ -1136,7 +1078,8 @@ header {
   right: 10px;
   text-align: center;
   top: 0.5rem;
-  width: 24px;
+  width: 2rem;
+  height: 2rem;
   font-size: 1.5rem;
   text-decoration: none;
   border-radius: 50%;
@@ -1160,14 +1103,6 @@ header {
   color: var(--SecondaryColor);
 }
 
-.vision__imgs__container {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin: 2rem 0;
-}
-
 /* ---------SECTION:FORM CONTACT--------- */
 
 .contact__form__container {
@@ -1182,10 +1117,7 @@ header {
   margin: 5px 0 20px 0;
   height: 20px;
 }
-.vision__imgs {
-  width: 90%;
-  height: auto;
-}
+
 .contact__form__container__btn {
   display: flex;
   flex-direction: column;
@@ -1199,13 +1131,13 @@ header {
 }
 
 @media (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
   .contact__form__container {
     width: 70%;
   }
-  .vision__imgs {
-    height: auto;
-    margin: 0;
-  }
+
   .contact__form__container__btn {
     flex-direction: row;
   }
@@ -1217,10 +1149,6 @@ header {
 @media (min-width: 1024px) {
   .contact__form__container {
     width: 80%;
-  }
-  .vision__imgs {
-    width: 40%;
-    height: auto;
   }
 }
 @media (min-width: 1440px) {
@@ -1418,6 +1346,25 @@ header {
   gap: 1rem;
 }
 
+.modal-content {
+  background-color: var(--SecondaryBackground);
+}
+
+.btn-close {
+  border-radius: 50%;
+  transition: var(--Transitions);
+  background: none;
+  background-color: var(--SecondaryColor);
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-header,
+.modal-footer {
+  justify-content: center;
+}
 /* -------ANIMACIONES------- */
 
 .translate__animation {

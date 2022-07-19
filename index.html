@@ -38,6 +38,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- -------BOOTSTRAP-------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
     <!-- -------CSS-------- -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
@@ -55,7 +60,7 @@
     <!-- -----TOP NAVBAR REDES----- -->
     <div class="top__NavBar animate__animated animate__fadeInDown ">
         <div>
-            <h2>Maximiliano Torres <span> ~ Kinesiología & Fisiatría</span></h2>
+            <h2 class="">Maximiliano Torres <span> ~ Kinesiología & Fisiatría</span></h2>
         </div>
         <div class="navBar__redes__top">
             <a href="mailto:mtorres363@gmail.com" target="_blank" rel="noreferrer" title="E-Mail">
@@ -76,7 +81,7 @@
     <header class="animate__animated animate__fadeIn">
         <nav class="navBar" id="#top">
             <div class="navBar__logo__container translate__animation__left">
-                <img class="navBar__logo navBar__logo__index" src="./assets/logos/LogoHeader.png" />
+                <img class="navBar__logo navBar__logo__index" alt="KMT Logo" src="./assets/logos/LogoHeader.png" />
             </div>
             <div class="navBar__right__content">
                 <ul class="navBar__links fade__in__animation__2s translate__animation">
@@ -127,7 +132,7 @@
             <div class="hero__banner animate__animated animate__fadeIn">
                 <div class="hero__banner__blur">
                     <div class="hero__banner__flex">
-                        <img class="hero__banner__logo translate__animation__main__3"
+                        <img class="hero__banner__logo translate__animation__main__3" alt="KMT Kinesiologia"
                             src="assets/logos/LogoHeader.png" />
 
                         <!-- FINAL CHANGES
@@ -163,36 +168,41 @@
 
     <!-- /* ---------BIO DETAIL SECTION--------- */ -->
 
+
     <section>
         <div class="container__color__light container__color__dark">
-            <div class="card__container ">
-                <!-- CARD 1 -->
-                <div class="card" data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-duration="800"
-                    data-aos-delay="50" data-aos-once="true" data-aos-anchor-placement="bottom-bottom">
-                    <h3 class="main__titles"><span>B</span>iografía</h3>
-                    <div class="card__icon">
-                        <i class="fa-solid fa-user"></i>
+            <div class="container-fluid px-4">
+                <div class="row gx-5 gy-5">
+                    <div class="main__card col-sm-6" data-aos="fade-in" data-aos-easing="ease-in-out"
+                        data-aos-duration="800" data-aos-delay="50" data-aos-once="true"
+                        data-aos-anchor-placement="bottom-bottom">
+                        <h3 class="main__titles"><span>B</span>iografía</h3>
+                        <div class="card__icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <p class="main__paragraph">Mi nombre es Maximiliano Torres, soy licenciado en Kinesiología y
+                            Fisiatría, recibido en el
+                            Instituto Universitario de Ciencias de la Salud, Fundación H. A. Barceló (Argentina),
+                            enfocado
+                            tanto en la terapia por lesiones y deportiva...</p>
+                        <a href="./pages/Biografia.html"><button class="btn btn__navigation__link margin__0">Seguir
+                                Leyendo <i class="fa-solid fa-angle-right"></i></button></a>
                     </div>
-                    <p class="main__paragraph">Mi nombre es Maximiliano Torres, soy licenciado en Kinesiología y
-                        Fisiatría, recibido en el
-                        Instituto Universitario de Ciencias de la Salud, Fundación H. A. Barceló (Argentina), enfocado
-                        tanto en la terapia por lesiones y deportiva...</p>
-                    <a href="./pages/Biografia.html"><button class="btn btn__navigation__link margin__0">Seguir
-                            Leyendo <i class="fa-solid fa-angle-right"></i></button></a>
-                </div>
-                <!-- CARD 2 -->
-                <div class="card" data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-duration="800"
-                    data-aos-delay="200" data-aos-once="true" data-aos-anchor-placement="bottom-bottom">
-                    <h3 class="main__titles"><span>V</span>isión</h3>
-                    <div class="card__icon">
-                        <i class="fa-solid fa-list-check"></i>
+                    <div class="main__card col-sm-6" data-aos="fade-in" data-aos-easing="ease-in-out"
+                        data-aos-duration="800" data-aos-delay="200" data-aos-once="true"
+                        data-aos-anchor-placement="bottom-bottom">
+                        <h3 class="main__titles"><span>V</span>isión</h3>
+                        <div class="card__icon">
+                            <i class="fa-solid fa-list-check"></i>
+
+                        </div>
+                        <p class="main__paragraph">Rehabilitación a través del movimiento, haciendo foco en la parte
+                            postural y así aumentar el bienestar de los pacientes. Este tipo de terapias brindará al
+                            paciente resultados inmediatos a traves de la
+                            cosntancia y regularidad...</p>
+                        <a href="./pages/vision.html"><button class="btn btn__navigation__link margin__0">Seguir
+                                Leyendo <i class="fa-solid fa-angle-right"></i></button></a>
                     </div>
-                    <p class="main__paragraph">Rehabilitación a través del movimiento, haciendo foco en la parte
-                        postural y así aumentar el bienestar de los pacientes. Este tipo de terapias brindará al
-                        paciente resultados inmediatos a traves de la
-                        cosntancia y regularidad...</p>
-                    <a href="./pages/vision.html"><button class="btn btn__navigation__link margin__0">Seguir
-                            Leyendo <i class="fa-solid fa-angle-right"></i></button></a>
                 </div>
             </div>
         </div>
@@ -206,18 +216,24 @@
             class="container__color__light container__color__dark container__color__dark__separator container__color__allign__center">
             <div class="separator"></div>
             <div class="separator__frase">
-                <img src="./assets/ImgPicture1.png" class="separator__frase__img" data-aos="fade-in"
-                    data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="50" data-aos-once="true"
-                    data-aos-anchor-placement="bottom-bottom"></img>
-                <div class="separator__frase__title" data-aos="fade-in" data-aos-easing="ease-in-out"
-                    data-aos-duration="800" data-aos-delay="500" data-aos-once="true"
-                    data-aos-anchor-placement="bottom-bottom">
-                    <h3 class="main__titles"><span>Maximiliano</span>Torres</h3>
-                    <h4 class="main__subtitles">Licenciado en Kinesiología & Fisiatría.</h4>
-                    <div class="separator__frase__texto">
-                        <p>Rehabilitación a través del <span>movimiento</span>, haciendo foco en la parte
-                            <span>postural</span> y así <span>aumentar el bienestar</span> de los pacientes.
-                        </p>
+                <div class="container-fluid ">
+                    <div class="row justify-content-center">
+                        <img src="./assets/ImgPicture1.png" alt="Maximiliano Torres"
+                            class="separator__frase__img col-sm-5" data-aos="fade-in" data-aos-easing="ease-in-out"
+                            data-aos-duration="800" data-aos-delay="50" data-aos-once="true"
+                            data-aos-anchor-placement="bottom-bottom" />
+
+                        <div class="separator__frase__title col-sm-7 align-self-center" data-aos="fade-in"
+                            data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="500"
+                            data-aos-once="true" data-aos-anchor-placement="bottom-bottom">
+                            <h3 class="main__titles"><span>Maximiliano</span>Torres</h3>
+                            <h4 class="main__subtitles">Licenciado en Kinesiología & Fisiatría.</h4>
+                            <div class="separator__frase__texto">
+                                <p>Rehabilitación a través del <span>movimiento</span>, haciendo foco en la parte
+                                    <span>postural</span> y así <span>aumentar el bienestar</span> de los pacientes.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -287,6 +303,16 @@
                         class="fa-solid fa-angle-right"></i></button></a>
         </div>
     </article>
+
+
+
+
+
+
+
+
+
+
     <!-- /* ---------END SERVICES GALLERY SECTION--------- */ -->
 
 
@@ -364,7 +390,7 @@
     <footer>
         <div class="footer" id="footer">
             <div><a href="#top" title="Ir arriba"><img class="navBar__logo navBar__logo_footer navBar__logo__hover"
-                        src="./assets/logos/LogoHeader.png" /></a>
+                        alt="KMT Logo" src="./assets/logos/LogoHeader.png" /></a>
             </div>
             <ul class="navBar__links">
                 <li><a class="navBar__links__active__page" href="#top">Inicio</a></li>
@@ -418,7 +444,10 @@
     </script>
     <!-- --------------END SCRIPTS-------------- -->
 
-
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
