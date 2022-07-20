@@ -28,7 +28,6 @@ https://gioruanova.github.io/kmt_kinesiologia-jorge-ruanova/
 
 https://mkt-maxitorres.netlify.app/
 
-Coderhouse project
 
 ## :computer: Authors
 
