@@ -21,7 +21,7 @@
   --PrimaryFont: "Roboto", sans-serif; /* TEXTS */
   --SecondaryFont: "Encode Sans SC", sans-serif; /* LOGO */
   --Transitions: 400ms;
-} 
+}
 
 /* 
 @media (min-width: 320px) {
@@ -522,12 +522,14 @@ header {
   padding: 0 1rem;
   text-shadow: 2px 1px 2px var(--3rdColor);
 }
-.main__titles span {
+
+.main__titles::first-letter {
   font-family: var(--SecondaryFont);
   color: var(--SecondaryColor);
   border-bottom: 2px solid var(--SecondaryColor);
   box-shadow: 0 2px 2px -2px var(--3rdColor);
 }
+
 .main__subtitles {
   font-size: 1.2rem;
   font-family: var(--PrimaryFont);
@@ -544,7 +546,8 @@ header {
   font-style: italic;
   margin: 0.5rem 0 1rem 0;
 }
-.main__titles__cards span {
+
+.main__titles__cards::first-letter {
   font-family: var(--SecondaryFont);
   color: var(--SecondaryColor);
   border-bottom: 2px solid var(--SecondaryColor);
@@ -768,6 +771,9 @@ header {
   margin: 0;
   text-shadow: 3px 3px 2px var(--SecondaryColor);
 }
+
+
+
 .hero__banner h2 {
   color: var(--3rdColor);
   font-style: italic;
