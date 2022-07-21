@@ -1,7 +1,5 @@
 ## :page_with_curl: Kinesiologia Maximiliano Torres
 
-Coderhouse project
-
 ## Last Updates
 
 Bootstrap applied:
