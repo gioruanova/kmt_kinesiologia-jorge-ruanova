@@ -26,7 +26,9 @@ Containers and breakpoints on Lines 223
 
 Containers and breakpoints on Lines 146
 
-Bt modal: trigger on lines 157, 177 & 197 - modal on lines 311 to 408
+Bt modal: trigger on lines 157, 177 & 197 
+
+Modal on lines 311 to 408
 
 Containers and breakpoints on Lines 214
 
