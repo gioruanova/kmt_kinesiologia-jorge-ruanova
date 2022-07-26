@@ -6,21 +6,26 @@ Coderhouse project
 
 Bootstrap applied:
 -Index:
-Containers and breakpoints on Lines 174 to 191
-Containers and breakpoints on Lines 219
+*Containers and breakpoints on Lines 174 to 191
+*Containers and breakpoints on Lines 219
 
 -Biografia:
-Containers and breakpoints on Lines 144 to
-Containers and breakpoints on Lines 213
+*Containers and breakpoints on Lines 144 to
+*Containers and breakpoints on Lines 213
 
 -Vision:
-Containers and breakpoints on Lines 143
-Containers and breakpoints on Lines 223
+*Containers and breakpoints on Lines 143
+*Containers and breakpoints on Lines 223
 
 -Tratamientos:
-Containers and breakpoints on Lines 146
-Bt modal: trigger on lines 157, 177 & 197 - modal on lines 311 to 408
-Containers and breakpoints on Lines 214
+*Containers and breakpoints on Lines 146
+*Bt modal: trigger on lines 157, 177 & 197 - modal on lines 311 to 408
+*Containers and breakpoints on Lines 214
+
+-SCSS generated
+*Nesting
+*Variables
+*Pseudo classes
 
 ## Live Site on:
 
