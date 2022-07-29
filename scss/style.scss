@@ -1,23 +1,39 @@
-// ----GLOBAL VARS----
-$PrimaryBackground: rgb(36, 35, 35); /* GRIS OSCURO */
-$SecondaryBackground: rgb(61, 61, 61); /* GRIS CLARO */
+// VARIABLES----------
+$base_color_a: #242323; /* GRIS OSCURO */
+$base_color_b: #3d3d3d; /* GRIS CLARO */
 
-$NavBarColor: rgba(36, 35, 35, 0.965); /* GRIS OSCURO TRANSPARENTE*/
+$primary_color: #ffffff; /* BLANCO */
+$secondary_color: #da7171; /* NARANJA OSCURO */
+$shadow_color: #6b3131; /* NARANJA OSCURO */
+$effect_color: #f0bb77; /* NARANJA CLARO */
 
-$PrimaryColor: rgb(255, 255, 255); /* BLANCO */
-$SecondaryColor: rgb(218, 113, 113); /* NARANJA OSCURO */
-$ShadowColor: rgb(107, 49, 49); /* NARANJA OSCURO */
-$trdColor: rgb(240, 187, 119); /* NARANJA CLARO */
+$additional_color_a: #568eed; /* AZUL */
+$additional_color_b: #25d366; /*VERDE*/
+$additional_color_c: #1f994b; /*VERDE*/
 
-$InstagramColor: rgb(86, 142, 237); /* AZUL */
+$blur_a: #b372728f;
+$blur_b: #0000009a;
 
-$WhattsAppColorMobile: rgb(37, 211, 102); /*VERDE*/
-$WhattsAppColorHoverMobile: rgb(31, 153, 75); /*VERDE*/
+$primary_font: "Roboto", sans-serif; /* TEXTS */
+$secondary_font: "Encode Sans SC", sans-serif; /* LOGO */
 
-$PrimaryFont: "Roboto", sans-serif; /* TEXTS */
-$SecondaryFont: "Encode Sans SC", sans-serif; /* LOGO */
-$Transitions: 400ms;
+$xs_font: 1rem;
+$s_font: 1.3rem;
+$m_font: 1.5rem;
+$l_font: 2rem;
+$xl_font: 3rem;
+$xxl_font: 4rem;
+$xxxl_font: 5rem;
 
+$transition: 200ms;
+
+// MIXINS----------
+@mixin hover_logo($colorhover, $scaletransform) {
+  color: $colorhover;
+  transform: $scaletransform;
+}
+
+// MEDIA SIZES----------
 /* 
 @media (min-width: 320px) {
 }
@@ -34,21 +50,21 @@ $Transitions: 400ms;
 /* ------------------------------MAIN SETUP------------------------------ */
 
 ::selection {
-  background-color: $SecondaryColor;
-  color: $SecondaryBackground;
+  background-color: $secondary_color;
+  color: $base_color_b;
 }
 
 html {
   scroll-behavior: smooth;
-  font-family: $PrimaryFont;
+  font-family: $primary_font;
   width: 100%;
   height: 100vh;
-  color: $PrimaryColor;
-  background: $PrimaryBackground;
+  color: $primary_color;
+  background: $base_color_a;
   box-sizing: border-box;
   body {
-    background: $PrimaryBackground;
-    color: $PrimaryColor;
+    background: $base_color_a;
+    color: $primary_color;
   }
   ul {
     list-style: none;
@@ -63,11 +79,11 @@ html {
 /* ---------NAVBAR--------- */
 
 header {
-  transition: $Transitions;
-  font-family: $SecondaryFont;
+  transition: $transition;
+  font-family: $secondary_font;
   position: sticky;
   top: 0;
-  background: $PrimaryBackground;
+  background: $base_color_a;
   z-index: 1;
   .header {
     display: flex;
@@ -84,31 +100,31 @@ header {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  background: linear-gradient(to right, $ShadowColor, $PrimaryBackground);
+  background: linear-gradient(to right, $shadow_color, $base_color_a);
   padding: 0.5rem 0;
-  transition: $Transitions;
+  transition: $transition;
   .navBar__redes__top {
     i {
-      color: $trdColor;
-      font-size: 1.5rem;
-      transition: $Transitions;
+      color: $effect_color;
+      font-size: $m_font;
+      transition: $transition;
       margin: 0;
       letter-spacing: 10px;
       &:hover {
-        color: $PrimaryColor;
+        color: $primary_color;
         transform: scale(1.09);
       }
     }
   }
   span {
     text-transform: capitalize;
-    font-family: $PrimaryFont;
+    font-family: $primary_font;
     letter-spacing: 2px;
-    font-size: 1rem;
+    font-size: $xs_font;
     font-weight: 400;
     font-style: italic;
     margin: 0;
-    color: $PrimaryColor;
+    color: $primary_color;
   }
   h2 {
     display: none;
@@ -131,14 +147,14 @@ header {
   height: 50px;
   top: 10px;
   left: 10px;
-  background-color: $SecondaryColor;
+  background-color: $secondary_color;
   border-radius: 50%;
-  transition: $Transitions;
+  transition: $transition;
   z-index: 1;
-  font-size: 1.5rem;
-  box-shadow: 0px -0px 10px $ShadowColor;
+  font-size: $m_font;
+  box-shadow: 0px -0px 10px $shadow_color;
   a {
-    color: $PrimaryColor;
+    color: $primary_color;
   }
 }
 
@@ -163,7 +179,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 10rem;
-    box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.151);
+    box-shadow: 0px 3px 10px $base_color_b;
   }
   .burger__mobile {
     display: none;
@@ -178,13 +194,13 @@ header {
     h2 {
       display: inline;
       text-transform: uppercase;
-      font-family: $SecondaryFont;
+      font-family: $secondary_font;
       letter-spacing: 2px;
-      font-size: 1rem;
+      font-size: $xs_font;
       font-weight: 800;
       font-style: italic;
       margin: 0;
-      color: $trdColor;
+      color: $effect_color;
     }
   }
   .navBar__links {
@@ -210,11 +226,8 @@ header {
 
 .navBar__logo {
   width: 5rem;
-  transition: ease-in-out $Transitions;
-  
+  transition: ease-in-out $transition;
 }
-
-
 
 .navBar__burger {
   display: none;
@@ -222,14 +235,13 @@ header {
 .footer__social {
   .navBar__redes {
     i {
-      color: $SecondaryColor;
-      font-size: 1.5rem;
-      transition: $Transitions;
+      color: $secondary_color;
+      font-size: $m_font;
+      transition: $transition;
       margin: 0;
       letter-spacing: 10px;
       &:hover {
-        color: $trdColor;
-        transform: scale(1.09);
+        @include hover_logo($effect_color, scale(1.09));
       }
     }
   }
@@ -239,26 +251,25 @@ header {
   a {
     .navBar__redes {
       i {
-        color: $SecondaryColor;
-        font-size: 1.5rem;
-        transition: $Transitions;
+        color: $secondary_color;
+        font-size: $m_font;
+        transition: $transition;
         margin: 0;
         letter-spacing: 10px;
         &:hover {
-          color: $trdColor;
-          transform: scale(1.09);
+          @include hover_logo($effect_color, scale(1.09));
         }
       }
     }
-    color: $PrimaryColor;
-    font-size: 1rem;
-    transition: $Transitions;
+    color: $primary_color;
+    font-size: $xs_font;
+    transition: $transition;
     margin: 0;
     &:hover {
-      color: $SecondaryColor;
+      color: $secondary_color;
     }
     &:active {
-      color: $trdColor;
+      @include hover_logo($effect_color, scale(1.09));
     }
   }
 }
@@ -266,47 +277,48 @@ header {
 /* ---------BUTTONS--------- */
 
 .btn {
-  background-color: $SecondaryColor;
+  background-color: $secondary_color;
   border: none;
   padding: 0.5rem 1rem;
   font-weight: 500;
-  color: $PrimaryColor;
-  transition: $Transitions;
+  color: $primary_color;
+  transition: $transition;
   line-height: 15px;
   margin-left: 10px;
   text-align: center;
   padding: 6px 20px;
   white-space: nowrap;
-  font-size: 1rem;
-  border: 2px solid $SecondaryColor;
+  font-size: $s_font;
+  border: 2px solid $secondary_color;
   border-radius: 2px;
 }
 
 .hero__banner__btn {
-  font-size: 1.5rem;
+  font-size: $m_font;
   padding: 15px 30px;
 }
 
 .btn {
   &:hover {
     background-color: transparent !important;
-    color: $PrimaryColor !important;
+    color: $primary_color !important;
     cursor: pointer;
-    border: 2px solid $PrimaryColor;
+    border: 2px solid $primary_color;
   }
 }
 
 .follow__btn {
-  background-color: $InstagramColor;
+  background-color: $additional_color_a;
   padding: 5px 15px;
   border-radius: 5px;
   margin-top: 1rem;
   border: none;
+  font-size: $xs_font;
   &:hover {
-    background-color: $PrimaryColor !important;
+    background-color: $primary_color !important;
     padding: 5px 15px;
     border-radius: 5px;
-    color: $PrimaryBackground !important;
+    color: $base_color_a !important;
     border: none;
   }
 }
@@ -314,6 +326,7 @@ header {
 .btn__navigation__link {
   margin: 0.5rem 0 2rem 0;
   padding: 10px 30px;
+  font-size: $xs_font;
 }
 
 /* ---------FOOTER--------- */
@@ -324,14 +337,14 @@ header {
     flex-direction: column;
     margin-bottom: 0rem;
     padding-bottom: 1rem;
-    border-bottom: 2px solid $SecondaryColor;
+    border-bottom: 2px solid $secondary_color;
     gap: 1rem;
   }
   .footer__copyright {
     p {
-      font-family: $PrimaryFont;
+      font-family: $primary_font;
       margin: 0;
-      font-size: 1rem;
+      font-size: $xs_font;
       letter-spacing: 1px;
     }
   }
@@ -339,7 +352,7 @@ header {
     p {
       padding: 0px 0 0 0;
       margin: 10px 0 5px 0;
-      font-family: $PrimaryFont;
+      font-family: $primary_font;
     }
   }
 }
@@ -353,10 +366,13 @@ header {
     }
   }
   .footer__copyright {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
     p {
-      font-family: $PrimaryFont;
+      font-family: $primary_font;
       margin: 0;
-      font-size: 1rem;
+      font-size: $xs_font;
       letter-spacing: 1px;
     }
   }
@@ -371,30 +387,30 @@ header {
 }
 
 .footer {
-  background-color: $SecondaryBackground;
+  background-color: $base_color_b;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 2rem 0 0 0;
-  font-family: $SecondaryFont;
+  font-family: $secondary_font;
   .navBar__links {
     margin-top: 2rem;
     align-items: center;
     text-align: center;
   }
   .footer__copyright {
-    background-color: $PrimaryBackground;
+    background-color: $base_color_a;
     width: 100%;
     padding: 20px 0;
     font-weight: 300;
     a {
-      color: $SecondaryColor;
-      transition: $Transitions;
+      color: $secondary_color;
+      transition: $transition;
       font-weight: 600;
       &:hover {
-        color: $trdColor;
+        @include hover_logo($effect_color, scale(1.09));
       }
     }
   }
@@ -404,13 +420,13 @@ header {
 
 .banner__whatsapp {
   width: 100%;
-  background-color: $SecondaryColor;
-  color: $PrimaryBackground;
-  transition: $Transitions;
+  background-color: $secondary_color;
+  color: $base_color_a;
+  transition: $transition;
   text-transform: uppercase;
   text-align: center;
   padding: 1rem 0;
-  font-size: 1rem;
+  font-size: $xs_font;
   letter-spacing: 1px;
 }
 .whatsapp__fixed__icon {
@@ -423,11 +439,11 @@ header {
   height: 50px;
   bottom: 20px;
   right: 20px;
-  background-color: $WhattsAppColorMobile;
+  background-color: $additional_color_b;
   border-radius: 50%;
-  transition: $Transitions;
+  transition: $transition;
   z-index: 1;
-  box-shadow: 0px -0px 10px $WhattsAppColorHoverMobile;
+  box-shadow: 0px -0px 10px $additional_color_c;
 }
 
 .follow {
@@ -442,7 +458,7 @@ header {
 
 @media (min-width: 768px) {
   .banner__whatsapp {
-    font-size: 1.4rem;
+    font-size: $s_font;
   }
   .follow {
     flex-direction: column;
@@ -455,8 +471,8 @@ header {
 
 @media (min-width: 1024px) {
   .whatsapp__fixed__icon {
-    background-color: $SecondaryColor;
-    box-shadow: 0px -0px 10px $ShadowColor;
+    background-color: $secondary_color;
+    box-shadow: 0px -0px 10px $shadow_color;
   }
 
   .follow {
@@ -474,7 +490,7 @@ header {
   text-align: center;
   margin: 0 auto;
   width: 100%;
-  background-color: $SecondaryColor;
+  background-color: $secondary_color;
   height: 0.2rem;
 }
 
@@ -484,25 +500,25 @@ header {
   text-align: center;
   margin: 0 auto;
   width: 100%;
-  background-color: rgb(123, 117, 117);
+  background-color: $base_color_b;
   height: 0.2rem;
-  box-shadow: 0px -5px 10px rgba(255, 255, 255, 0.308);
+  box-shadow: 0px -5px 10px $base_color_b;
 }
 
 .banner__whatsapp:hover > i,
 .banner__whatsapp:hover {
-  transition: $Transitions;
-  color: $PrimaryColor;
+  transition: $transition;
+  color: $primary_color;
 }
 
 .navBar__links__active__page {
-  border-bottom: 2px solid $SecondaryColor;
-  color: $trdColor !important;
+  border-bottom: 2px solid $secondary_color;
+  color: $effect_color !important;
   cursor: default;
 }
 
 .navBar__logo__hover {
-  transition: $Transitions;
+  transition: $transition;
 }
 .navBar__logo__hover {
   &:hover {
@@ -513,14 +529,14 @@ header {
 
 .whatsapp__fixed__icon {
   i {
-    font-size: 2rem;
-    color: $PrimaryColor;
+    font-size: $l_font;
+    color: $primary_color;
   }
 }
 
 .whatsapp__fixed__icon {
   &:hover {
-    background-color: $WhattsAppColorMobile;
+    background-color: $additional_color_b;
     transform: scale(1.09);
   }
 }
@@ -528,26 +544,26 @@ header {
 /* ------------TITLES------------------------- */
 
 .main__titles {
-  font-size: 1.5rem;
-  font-family: $SecondaryFont;
+  font-size: $m_font;
+  font-family: $secondary_font;
   font-style: italic;
   letter-spacing: 2px;
   margin: 0;
   text-align: center;
   padding: 0 1rem;
-  text-shadow: 2px 1px 2px $trdColor;
+  text-shadow: 2px 1px 2px $effect_color;
 }
 
 .main__titles::first-letter {
-  font-family: $SecondaryFont;
-  color: $SecondaryColor;
-  border-bottom: 2px solid $SecondaryColor;
-  box-shadow: 0 2px 2px -2px $trdColor;
+  font-family: $secondary_font;
+  color: $secondary_color;
+  border-bottom: 2px solid $secondary_color;
+  box-shadow: 0 2px 2px -2px $effect_color;
 }
 
 .main__subtitles {
-  font-size: 1.2rem;
-  font-family: $PrimaryFont;
+  font-size: $s_font;
+  font-family: $primary_font;
   font-style: italic;
   letter-spacing: 2px;
   margin: 5px 0 20px 0;
@@ -556,32 +572,32 @@ header {
   padding: 0 1rem;
 }
 .main__titles__cards {
-  font-size: 1.5rem;
-  font-family: $SecondaryFont;
+  font-size: $m_font;
+  font-family: $secondary_font;
   font-style: italic;
   margin: 0.5rem 0 1rem 0;
 }
 
 .main__titles__cards::first-letter {
-  font-family: $SecondaryFont;
-  color: $SecondaryColor;
-  border-bottom: 2px solid $SecondaryColor;
+  font-family: $secondary_font;
+  color: $secondary_color;
+  border-bottom: 2px solid $secondary_color;
 }
 
 @media (min-width: 768px) {
   .main__titles {
-    font-size: 3rem;
+    font-size: $xl_font;
     text-align: center;
     letter-spacing: 4px;
-    text-shadow: 2px 2px 2px $trdColor;
+    text-shadow: 2px 2px 2px $effect_color;
   }
 
   .main__subtitles {
-    font-size: 1.3rem;
+    font-size: $s_font;
     text-align: center;
   }
   .main__titles__cards {
-    font-size: 1.6rem;
+    font-size: $s_font;
   }
 }
 @media (min-width: 1024px) {
@@ -595,7 +611,7 @@ header {
     padding: 0;
   }
   .main__titles__cards {
-    font-size: 2rem;
+    font-size: $l_font;
   }
 }
 
@@ -603,7 +619,7 @@ header {
 
 .container__color__light {
   padding: 5rem 0;
-  background-color: $SecondaryBackground;
+  background-color: $base_color_b;
   text-align: center;
 }
 .container__sections__padding__sides {
@@ -617,14 +633,14 @@ header {
 }
 .container__color__light {
   p {
-    font-size: 1rem;
+    font-size: $xs_font;
     font-weight: 300;
     letter-spacing: 1px;
     word-spacing: 3px;
   }
 }
 .main__paragraph {
-  font-size: 1rem;
+  font-size: $xs_font;
   font-weight: 200;
   letter-spacing: 1px;
   word-spacing: 3px;
@@ -635,17 +651,17 @@ header {
 
 @media (min-width: 768px) {
   .container__color__light {
-    padding: 5rem 5rem;
+    padding: 5rem;
   }
   .container__color__dark__separator {
     padding: 0 5rem;
   }
   .container__nav__map__container {
     display: flex;
-    padding: 2rem 5rem 2rem 5rem;
+    padding: 2rem 5rem;
   }
   .main__paragraph {
-    font-size: 1rem;
+    font-size: $xs_font;
     font-weight: 200;
     letter-spacing: 1px;
     word-spacing: 3px;
@@ -690,7 +706,8 @@ header {
 }
 
 .container__color__dark {
-  background-color: $PrimaryBackground;
+  @extend .container__color__light;
+  background-color: $base_color_a;
 }
 
 .container__color__allign__center {
@@ -705,31 +722,31 @@ header {
 }
 
 .container__nav__map__background__blur {
-  background: linear-gradient(to left, #b372728f, rgba(0, 0, 0, 0.603));
+  background: linear-gradient(to left, $blur_a, $blur_b);
   backdrop-filter: blur(5px);
 }
 
 .container__nav__map__container {
   a {
-    font-size: 1.5rem;
-    font-family: $SecondaryFont;
-    color: $PrimaryColor;
+    font-size: $m_font;
+    font-family: $secondary_font;
+    color: $primary_color;
     font-style: italic;
-    transition: $Transitions;
+    transition: $transition;
   }
 }
 .container__nav__map__container {
   a {
     &:hover {
-      color: $trdColor;
+      color: $effect_color;
     }
   }
 }
 .container__nav__map__container {
   p {
-    font-size: 1.5rem;
-    font-family: $PrimaryFont;
-    color: $SecondaryColor;
+    font-size: $m_font;
+    font-family: $primary_font;
+    color: $secondary_color;
     font-style: italic;
     margin: 0;
   }
@@ -764,7 +781,7 @@ header {
 }
 
 .hero__banner__blur {
-  background: linear-gradient(to left, #b372728f, rgba(0, 0, 0, 0.603));
+  background: linear-gradient(to left, $blur_a, $blur_b);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   height: 100vh;
@@ -784,24 +801,24 @@ header {
 }
 .hero__banner {
   h1 {
-    font-size: 2rem;
+    font-size: $l_font + 0.5;
     text-transform: uppercase;
-    color: $SecondaryColor;
+    color: $secondary_color;
     margin: 0;
-    text-shadow: 2px 2px 2px $trdColor;
+    text-shadow: 2px 2px 2px $effect_color;
   }
   span {
     display: block;
-    font-size: 2rem;
-    color: $PrimaryColor;
+    font-size: $l_font;
+    color: $primary_color;
     margin: 0;
-    text-shadow: 3px 3px 2px $SecondaryColor;
+    text-shadow: 3px 3px 2px $secondary_color;
   }
   h2 {
-    color: $trdColor;
+    color: $effect_color;
     font-style: italic;
     margin-bottom: 1rem;
-    font-size: 1rem;
+    font-size: $m_font;
     margin: 0;
     margin-bottom: 1rem;
   }
@@ -827,7 +844,7 @@ header {
 }
 .separator__frase__title {
   .main__titles {
-    font-size: 1.4rem;
+    font-size: $s_font;
     padding: 0;
     text-shadow: none;
   }
@@ -835,7 +852,7 @@ header {
 
 .separator__frase__title {
   .main__subtitles {
-    font-size: 1.1rem;
+    font-size: $s_font;
     padding: 0;
   }
 }
@@ -845,17 +862,17 @@ header {
 }
 .separator__frase__texto {
   p {
-    font-family: $PrimaryFont;
+    font-family: $primary_font;
     margin: 0;
-    font-size: 1rem;
+    font-size: $xs_font;
     letter-spacing: 1px;
     font-style: italic;
     text-align: center;
     padding: 0;
   }
   span {
-    color: $SecondaryColor;
-    border-bottom: 2px solid $SecondaryColor;
+    color: $secondary_color;
+    border-bottom: 2px solid $secondary_color;
     font-weight: 800;
   }
 }
@@ -875,7 +892,7 @@ header {
   position: relative;
   padding: 1rem 1rem 2rem 1rem;
   border-radius: 10px;
-  background: $SecondaryBackground;
+  background: $base_color_b;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -893,10 +910,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $SecondaryColor;
+  background-color: $secondary_color;
   border-radius: 50%;
-  color: $SecondaryBackground;
-  font-size: 3rem;
+  color: $base_color_b;
+  font-size: $xl_font;
   height: 5rem;
   width: 5rem;
   margin: 2rem 0;
@@ -913,13 +930,13 @@ header {
   }
   .hero__banner {
     h1 {
-      font-size: 4rem;
+      font-size: $xxl_font;
     }
     span {
-      font-size: 4rem;
+      font-size: $xxl_font;
     }
     h2 {
-      font-size: 1.5rem;
+      font-size: $m_font;
     }
   }
 
@@ -950,13 +967,13 @@ header {
   }
   .separator__frase__title {
     .main__titles {
-      font-size: 2rem;
+      font-size: $l_font;
       padding: 0;
     }
   }
   .separator__frase__title {
     .main__subtitles {
-      font-size: 1.5rem;
+      font-size: $m_font;
       padding: 0;
     }
   }
@@ -968,7 +985,7 @@ header {
     padding: 0 0rem 1rem 0;
   }
   .card__icon {
-    font-size: 5rem;
+    font-size: $xxxl_font;
     padding: 4rem;
   }
 }
@@ -1035,7 +1052,7 @@ header {
   background-position: center;
   background-size: cover;
   position: relative;
-  font-family: $SecondaryFont;
+  font-family: $secondary_font;
 }
 
 /* ---------MODIFICADORES--------- */
@@ -1068,13 +1085,6 @@ header {
   font-style: italic;
 }
 
-.img__foot__text {
-  font-style: italic;
-  font-size: 0.8rem !important;
-  text-align: center;
-  margin-top: 1rem;
-}
-
 .padding__sides {
   padding: 0 1rem;
 }
@@ -1094,52 +1104,6 @@ header {
   gap: 1rem;
 }
 
-.modal__dialog {
-  position: fixed;
-  font-family: Arial, Helvetica, sans-serif;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.8);
-  opacity: 0;
-  pointer-events: none;
-  transition: $Transitions;
-  p {
-    text-align: justify;
-  }
-  &:target {
-    opacity: 1;
-    pointer-events: auto;
-    transition: $Transitions;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-  }
-}
-.close {
-  background: $SecondaryColor;
-  color: $SecondaryBackground;
-  line-height: 25px;
-  position: absolute;
-  right: 10px;
-  text-align: center;
-  top: 0.5rem;
-  width: 2rem;
-  height: 2rem;
-  font-size: 1.5rem;
-  text-decoration: none;
-  border-radius: 50%;
-  opacity: 1;
-  color: $PrimaryColor;
-  padding: 5px;
-  transition: $Transitions;
-  &:hover {
-    background-color: $trdColor;
-    color: $PrimaryBackground;
-  }
-}
-
 /* ---------SECTION: BIOGRAFIA--------- */
 .bullets__section {
   margin: 2rem 0;
@@ -1147,7 +1111,7 @@ header {
 
 .bullets__container {
   i {
-    color: $SecondaryColor;
+    color: $secondary_color;
   }
 }
 
@@ -1161,7 +1125,7 @@ header {
 .contact__form textarea {
   max-width: auto;
   border: none;
-  background: $PrimaryColor;
+  background: $primary_color;
   margin: 5px 0 20px 0;
   height: 20px;
 }
@@ -1175,7 +1139,8 @@ header {
 }
 .contact__form__primary__btn {
   width: 100%;
-  border: 2px solid $SecondaryColor;
+  border: 2px solid $secondary_color;
+  font-size: $xs_font;
 }
 
 @media (min-width: 768px) {
@@ -1206,14 +1171,14 @@ header {
 }
 
 .contact__form {
-  background: $SecondaryBackground;
+  background: $base_color_b;
   border-radius: 5px;
   padding: 25px;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  box-shadow: 0 0 20px 0 $base_color_b, 0 5px 5px 0 $base_color_a;
   margin: 4rem 0 0 0;
 }
 .contact__form__dark {
-  background: $PrimaryBackground;
+  background: $base_color_a;
   margin: 4rem 0 0 0;
 }
 
@@ -1227,7 +1192,7 @@ header {
 
 .contact__form {
   label {
-    color: $SecondaryColor;
+    color: $secondary_color;
     font-weight: 600;
   }
 }
@@ -1242,7 +1207,7 @@ header {
 
 .contact__form__primary__btn {
   width: 100%;
-  border: 2px solid $SecondaryColor;
+  border: 2px solid $secondary_color;
 }
 
 .contact__form__secondary__btn {
@@ -1251,7 +1216,7 @@ header {
 
 .contact__form__secondary__btn {
   &:hover {
-    background-color: $SecondaryColor !important;
+    background-color: $secondary_color !important;
   }
 }
 
@@ -1267,32 +1232,32 @@ header {
   gap: 1rem;
 }
 .item__reel {
-  border: 2px solid $PrimaryColor;
+  border: 2px solid $primary_color;
   width: 100%;
   height: 150px;
   background-position: center;
   background-size: cover;
   border-radius: 10px;
-  transition: $Transitions;
+  transition: $transition;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
 }
 .footer__reel {
-  background-color: $SecondaryBackground;
+  background-color: $base_color_b;
   width: 100%;
   border-radius: 0px 0px 10px 10px;
   text-align: center;
   padding: 3px 0;
   text-decoration: none;
-  color: $PrimaryColor;
-  transition: $Transitions;
+  color: $primary_color;
+  transition: $transition;
 }
 .footer__reel {
   a {
     text-decoration: none;
-    color: $PrimaryColor;
+    color: $primary_color;
   }
 }
 
@@ -1302,7 +1267,7 @@ header {
     cursor: pointer;
     transform: scale(1.05);
     border: none;
-    box-shadow: -2px 2px 5px $SecondaryBackground;
+    box-shadow: -2px 2px 5px $base_color_b;
   }
 }
 
@@ -1374,19 +1339,18 @@ header {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.8);
   z-index: 1;
   width: 0%;
   height: 0%;
   opacity: 0;
   pointer-events: none;
-  transition: $Transitions;
+  transition: $transition;
 }
 
 .mobile__menu__modal {
   &:target {
     pointer-events: auto;
-    transition: $Transitions;
+    transition: $transition;
     width: 100%;
     height: 100%;
     opacity: 1;
@@ -1396,7 +1360,7 @@ header {
 .mobile__menu__modal > div {
   width: 100%;
   height: 100%;
-  background: $NavBarColor;
+  background: $base_color_a;
   display: flex;
   justify-content: flex-start;
   padding: 5rem 0 0 1rem;
@@ -1409,16 +1373,16 @@ header {
 }
 
 .modal-content {
-  background-color: $SecondaryBackground;
+  background-color: $base_color_b;
 }
 
 .btn-close {
   border-radius: 50%;
-  transition: $Transitions;
+  transition: $transition;
   background: none;
-  background-color: $SecondaryColor;
-  color: $PrimaryColor;
-  font-size: 1.5rem;
+  background-color: $secondary_color;
+  color: $primary_color;
+  font-size: $m_font;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1566,13 +1530,13 @@ body::-webkit-scrollbar {
 }
 body {
   scrollbar-width: thin;
-  scrollbar-color: $SecondaryColor $SecondaryBackground;
+  scrollbar-color: $secondary_color $base_color_b;
 }
 body::-webkit-scrollbar-track {
-  background: $SecondaryBackground;
+  background: $base_color_b;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: $SecondaryColor;
+  background-color: $secondary_color;
   border-radius: 6px;
-  border: 3px solid $SecondaryBackground;
+  border: 3px solid $base_color_b;
 }

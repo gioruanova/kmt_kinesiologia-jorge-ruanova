@@ -26,7 +26,7 @@ Containers and breakpoints on Lines 223
 
 Containers and breakpoints on Lines 146
 
-Bt modal: trigger on lines 157, 177 & 197 
+Bt modal: trigger on lines 157, 177 & 197
 
 Modal on lines 311 to 408
 
@@ -40,12 +40,20 @@ Variables
 
 Pseudo classes
 
+Mixing: line 31
+use: 233, 249, 261, 397
+
+Extend:
+use: 693
+
+Calc:
+use: 800
+
 ## Live Site on:
 
 https://gioruanova.github.io/kmt_kinesiologia-jorge-ruanova/
 
 https://mkt-maxitorres.netlify.app/
-
 
 ## :computer: Authors
 
