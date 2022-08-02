@@ -1,53 +1,67 @@
 ## :page_with_curl: Kinesiologia Maximiliano Torres
 
 ## Last Updates
+-SCSS generated
+-Nesting
+-Variables
+-Pseudo classes
 
-Bootstrap applied:
+-Mixing:
+SCSS FILE: Line 31
+Use: 273, 289, 301, 441
 
--Index:
+-Extend:
+use: 733
 
-Containers and breakpoints on Lines 174 to 191
+-Calc:
+use: 831
 
-Containers and breakpoints on Lines 219
+-Map:
+SCSS FILE: : Line 53
+HTML: Tratamientos/ 151, 170, 186, 202, 218
+
+-For:
+SCSS FILE: : Line 38
+HTML: Tratamientos/ 151, 170, 186, 202, 218
+
+---
+
+SEO:
+
+-Imgs optimization (compression)
+en todas las paginas
+-Keywords
+Kinesiología, Fisiatría, Ejercitación, Tratamientos, Terapias, Musculación, Huesos, Tendones, Stretching, Tonicidad, Fuerza Muscular, Fundación H. A. Barceló, Contracturas, Postura, Articulación, Lesiones Ligamentarias, Esguinces, Facturas, Reemplazos Articulares
+
+-Tittles
+-Re-visit
+-Description
+-Distribution
+-Content-Language
+-Robots
+-Author
+-Devices Favicon
+
+Encabezados (EM & STRONG)
+-Index:  
+EM > 104
+Strong > 106
 
 -Biografia:
-
-Containers and breakpoints on Lines 144
-
-Containers and breakpoints on Lines 213
+EM > 41
+Strong > 108
 
 -Vision:
-
-Containers and breakpoints on Lines 143
-
-Containers and breakpoints on Lines 223
+EM > 41
+Strong > 108
 
 -Tratamientos:
+EM > 41
+Strong > 108
 
-Containers and breakpoints on Lines 146
-
-Bt modal: trigger on lines 157, 177 & 197
-
-Modal on lines 311 to 408
-
-Containers and breakpoints on Lines 214
-
--SCSS generated
-
-Nesting
-
-Variables
-
-Pseudo classes
-
-Mixing: line 31
-use: 233, 249, 261, 397
-
-Extend:
-use: 693
-
-Calc:
-use: 800
+-Contacto:
+EM > 41
+Strong > 111
 
 ## Live Site on:
 

@@ -33,6 +33,35 @@ $transition: 200ms;
   transform: $scaletransform;
 }
 
+// FOR----------
+// @for $gradient from 1 through 5 {
+//   .bucle-#{$gradient} {
+//     background-color: rgb(97, 97, 97);
+//     border-radius: 10px;
+//   }
+// }
+
+// @for $gradient from 1 through 5 {
+//   .bucle-#{$gradient} {
+//     background-color: darken($base_color_b, $gradient * 2%);
+//   }
+// }
+
+// MAP----------
+$mapa1: (
+  colora: rgb(105, 105, 105),
+  colorb: rgb(77, 77, 77),
+  colorc: rgb(49, 49, 49),
+  colord: rgb(46, 46, 46),
+  colorf: rgb(23, 25, 44),
+);
+
+@each $sizes, $colores in $mapa1 {
+  .maps-#{$sizes} {
+    background-color: $colores;
+  }
+}
+
 // MEDIA SIZES----------
 /* 
 @media (min-width: 320px) {
@@ -280,7 +309,6 @@ header {
   background-color: $secondary_color;
   border: none;
   padding: 0.5rem 1rem;
-  font-weight: 500;
   color: $primary_color;
   transition: $transition;
   line-height: 15px;
@@ -544,14 +572,12 @@ header {
 /* ------------TITLES------------------------- */
 
 .main__titles {
-  font-size: $m_font;
-  font-family: $secondary_font;
+  font-size: $xl_font;
+  font-family: $primary_font;
   font-style: italic;
-  letter-spacing: 2px;
   margin: 0;
   text-align: center;
   padding: 0 1rem;
-  text-shadow: 2px 1px 2px $effect_color;
 }
 
 .main__titles::first-letter {
@@ -572,14 +598,13 @@ header {
   padding: 0 1rem;
 }
 .main__titles__cards {
-  font-size: $m_font;
-  font-family: $secondary_font;
+  font-size: $xs_font;
+  font-family: $primary_font;
   font-style: italic;
   margin: 0.5rem 0 1rem 0;
 }
 
 .main__titles__cards::first-letter {
-  font-family: $secondary_font;
   color: $secondary_color;
   border-bottom: 2px solid $secondary_color;
 }
@@ -588,8 +613,7 @@ header {
   .main__titles {
     font-size: $xl_font;
     text-align: center;
-    letter-spacing: 4px;
-    text-shadow: 2px 2px 2px $effect_color;
+    letter-spacing: 5px;
   }
 
   .main__subtitles {
@@ -611,7 +635,7 @@ header {
     padding: 0;
   }
   .main__titles__cards {
-    font-size: $l_font;
+    font-size: $s_font;
   }
 }
 
@@ -791,6 +815,9 @@ header {
   align-content: center;
   padding: 0 2rem;
   text-align: end;
+  button {
+    display: none;
+  }
 }
 .hero__banner__flex {
   display: flex;
@@ -914,8 +941,8 @@ header {
   border-radius: 50%;
   color: $base_color_b;
   font-size: $xl_font;
-  height: 5rem;
-  width: 5rem;
+  height: 4rem;
+  width: 4rem;
   margin: 2rem 0;
 }
 
@@ -923,6 +950,9 @@ header {
   .hero__banner__blur {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
+    button {
+      display: flex;
+    }
   }
 
   .hero__banner__flex {
@@ -985,7 +1015,7 @@ header {
     padding: 0 0rem 1rem 0;
   }
   .card__icon {
-    font-size: $xxxl_font;
+    font-size: $xxl_font;
     padding: 4rem;
   }
 }
@@ -1096,10 +1126,10 @@ header {
 /* ---------SECTION: TRATAMIENTOS--------- */
 
 .card__terapias__container {
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   gap: 1rem;
 }
@@ -1128,6 +1158,8 @@ header {
   background: $primary_color;
   margin: 5px 0 20px 0;
   height: 20px;
+  padding: 20px 10px;
+  border-radius: 2px;
 }
 
 .contact__form__container__btn {
@@ -1144,6 +1176,9 @@ header {
 }
 
 @media (min-width: 768px) {
+  .card__terapias__container {
+    height: 25rem;
+  }
 }
 
 @media (min-width: 768px) {
