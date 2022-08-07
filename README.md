@@ -30,6 +30,7 @@ SEO:
 
 -Imgs optimization (compression)
 en todas las paginas
+
 -Keywords
 Kinesiología, Fisiatría, Ejercitación, Tratamientos, Terapias, Musculación, Huesos, Tendones, Stretching, Tonicidad, Fuerza Muscular, Fundación H. A. Barceló, Contracturas, Postura, Articulación, Lesiones Ligamentarias, Esguinces, Facturas, Reemplazos Articulares
 
@@ -62,6 +63,14 @@ Strong > 108
 -Contacto:
 EM > 41
 Strong > 111
+
+-Error page testing
+
+https://gioruanova.github.io/kmt_kinesiologia-jorge-ruanova/blabla
+
+https://kmt-maxitorres.netlify.app/blabla
+
+-Functional contact form working on Netlify
 
 ## Live Site on:
 
