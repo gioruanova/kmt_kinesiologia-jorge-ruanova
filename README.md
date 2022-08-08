@@ -31,7 +31,9 @@ SEO:
 -Imgs optimization (compression)
 en todas las paginas
 
+
 -Keywords
+
 Kinesiología, Fisiatría, Ejercitación, Tratamientos, Terapias, Musculación, Huesos, Tendones, Stretching, Tonicidad, Fuerza Muscular, Fundación H. A. Barceló, Contracturas, Postura, Articulación, Lesiones Ligamentarias, Esguinces, Facturas, Reemplazos Articulares
 
 -Tittles
