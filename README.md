@@ -78,7 +78,7 @@ https://kmt-maxitorres.netlify.app/blabla
 
 https://gioruanova.github.io/kmt_kinesiologia-jorge-ruanova/
 
-https://mkt-maxitorres.netlify.app/
+https://kmt-maxitorres.netlify.app/
 
 ## :computer: Authors
 
