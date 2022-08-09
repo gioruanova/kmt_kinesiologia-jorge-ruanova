@@ -1255,4 +1255,22 @@ body::-webkit-scrollbar-thumb {
     flex-direction: row;
     text-align: left; }
     .error__page .error__page__container h1 {
-      font-size: 10rem; } }
+      font-size: 10rem;
+      font-family: 'Fira Mono', monospace; } }
+
+.shaking__logo {
+  animation: skew-x-shake 2s infinite; }
+
+@keyframes skew-x-shake {
+  0% {
+    transform: skewX(-15deg); }
+  5% {
+    transform: skewX(15deg); }
+  10% {
+    transform: skewX(-15deg); }
+  15% {
+    transform: skewX(15deg); }
+  20% {
+    transform: skewX(0deg); }
+  100% {
+    transform: skewX(0deg); } }

@@ -17,6 +17,8 @@ $blur_b: #0000009a;
 $primary_font: "Roboto", sans-serif; /* TEXTS */
 $secondary_font: "Encode Sans SC", sans-serif; /* LOGO */
 
+
+
 $xs_font: 1rem;
 $s_font: 1.3rem;
 $m_font: 1.5rem;
@@ -1629,7 +1631,22 @@ body::-webkit-scrollbar-thumb {
       text-align: left;
       h1 {
         font-size: 10rem;
+        font-family: 'Fira Mono', monospace;
       }
     }
   }
+}
+
+
+.shaking__logo{
+  animation: skew-x-shake 2s infinite;
+}
+
+@keyframes skew-x-shake{
+  0% { transform: skewX(-15deg); }
+  5% { transform: skewX(15deg); }
+  10% { transform: skewX(-15deg); }
+  15% { transform: skewX(15deg); }
+  20% { transform: skewX(0deg); }
+  100% { transform: skewX(0deg); }  
 }
