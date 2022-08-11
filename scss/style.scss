@@ -17,8 +17,6 @@ $blur_b: #0000009a;
 $primary_font: "Roboto", sans-serif; /* TEXTS */
 $secondary_font: "Encode Sans SC", sans-serif; /* LOGO */
 
-
-
 $xs_font: 1rem;
 $s_font: 1.3rem;
 $m_font: 1.5rem;
@@ -36,33 +34,33 @@ $transition: 200ms;
 }
 
 // FOR----------
-// @for $gradient from 1 through 5 {
-//   .bucle-#{$gradient} {
-//     background-color: rgb(97, 97, 97);
-//     border-radius: 10px;
-//   }
-// }
-
-// @for $gradient from 1 through 5 {
-//   .bucle-#{$gradient} {
-//     background-color: darken($base_color_b, $gradient * 2%);
-//   }
-// }
-
-// MAP----------
-$mapa1: (
-  colora: rgb(105, 105, 105),
-  colorb: rgb(77, 77, 77),
-  colorc: rgb(49, 49, 49),
-  colord: rgb(46, 46, 46),
-  colorf: rgb(23, 25, 44),
-);
-
-@each $sizes, $colores in $mapa1 {
-  .maps-#{$sizes} {
-    background-color: $colores;
+@for $gradient from 1 through 5 {
+  .bucle-#{$gradient} {
+    background-color: rgb(97, 97, 97);
+    border-radius: 10px;
   }
 }
+
+@for $gradient from 1 through 5 {
+  .bucle-#{$gradient} {
+    background-color: darken($base_color_b, $gradient * 2%);
+  }
+}
+
+// MAP----------
+// $mapa1: (
+//   colora: rgb(105, 105, 105),
+//   colorb: rgb(77, 77, 77),
+//   colorc: rgb(49, 49, 49),
+//   colord: rgb(46, 46, 46),
+//   colorf: rgb(23, 25, 44),
+// );
+
+// @each $sizes, $colores in $mapa1 {
+//   .maps-#{$sizes} {
+//     background-color: $colores;
+//   }
+// }
 
 // MEDIA SIZES----------
 /* 
@@ -585,6 +583,7 @@ header {
 .main__titles::first-letter {
   font-family: $secondary_font;
   color: $secondary_color;
+  padding-right: 5px;
   border-bottom: 2px solid $secondary_color;
   box-shadow: 0 2px 2px -2px $effect_color;
 }
@@ -901,7 +900,6 @@ header {
   }
   span {
     color: $secondary_color;
-    border-bottom: 2px solid $secondary_color;
     font-weight: 800;
   }
 }
@@ -1134,6 +1132,11 @@ header {
   justify-content: space-around;
   align-items: center;
   gap: 1rem;
+  transition: $transition;
+  &:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
 }
 
 /* ---------SECTION: BIOGRAFIA--------- */
@@ -1578,7 +1581,6 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid $base_color_b;
 }
 
-
 // -------404 PAGE-------
 
 .error__page {
@@ -1631,22 +1633,33 @@ body::-webkit-scrollbar-thumb {
       text-align: left;
       h1 {
         font-size: 10rem;
-        font-family: 'Fira Mono', monospace;
+        font-family: "Fira Mono", monospace;
       }
     }
   }
 }
 
-
-.shaking__logo{
+.shaking__logo {
   animation: skew-x-shake 2s infinite;
 }
 
-@keyframes skew-x-shake{
-  0% { transform: skewX(-15deg); }
-  5% { transform: skewX(15deg); }
-  10% { transform: skewX(-15deg); }
-  15% { transform: skewX(15deg); }
-  20% { transform: skewX(0deg); }
-  100% { transform: skewX(0deg); }  
+@keyframes skew-x-shake {
+  0% {
+    transform: skewX(-15deg);
+  }
+  5% {
+    transform: skewX(15deg);
+  }
+  10% {
+    transform: skewX(-15deg);
+  }
+  15% {
+    transform: skewX(15deg);
+  }
+  20% {
+    transform: skewX(0deg);
+  }
+  100% {
+    transform: skewX(0deg);
+  }
 }
