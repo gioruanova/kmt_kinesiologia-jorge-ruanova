@@ -579,7 +579,7 @@ header {
 
 /* ---------SECTION NAV MAP--------- */
 .container__nav__map__background {
-  background-image: url(../assets/HeroBannerNav.jpg);
+  background-image: url(../images/banners/HeroBannerNav.jpg);
   background-position: center;
   background-size: cover; }
 
@@ -613,7 +613,7 @@ header {
   padding: 2rem 0; }
 
 .sponsor__container__img {
-  background-image: url(../assets/logo_fundacion.jpg);
+  background-image: url(../images/logos/logo_fundacion.jpg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -833,7 +833,7 @@ header {
 
 /* ---------SECTION:HERO BANNER--------- */
 .hero__banner {
-  background-image: url(../assets/HeroBannerMain.jpg);
+  background-image: url(../images/banners/HeroBannerMain.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -1021,28 +1021,28 @@ header {
   opacity: 1; }
 
 .item1 {
-  background-image: url(../assets/imgsReels/reel1.JPG); }
+  background-image: url(../images/reels/reel1.JPG); }
 
 .item2 {
-  background-image: url(../assets/imgsReels/reel2.JPG); }
+  background-image: url(../images/reels/reel2.JPG); }
 
 .item3 {
-  background-image: url(../assets/imgsReels/reel3.JPG); }
+  background-image: url(../images/reels/reel3.JPG); }
 
 .item4 {
-  background-image: url(../assets/imgsReels/reel4.JPG); }
+  background-image: url(../images/reels/reel4.JPG); }
 
 .item5 {
-  background-image: url(../assets/imgsReels/reel5.JPG); }
+  background-image: url(../images/reels/reel5.JPG); }
 
 .item6 {
-  background-image: url(../assets/imgsReels/reel6.JPG); }
+  background-image: url(../images/reels/reel6.JPG); }
 
 .item7 {
-  background-image: url(../assets/imgsReels/reel7.JPG); }
+  background-image: url(../images/reels/reel7.JPG); }
 
 .item8 {
-  background-image: url(../assets/imgsReels/reel8.JPG); }
+  background-image: url(../images/reels/reel8.JPG); }
 
 @media (min-width: 425px) {
   .item__reel {
