@@ -4,4 +4,4 @@ php_value display_errors 1
 # DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:20251696:
 
 
-ErrorDocument 404 /pages/404.html
+ErrorDocument 404 /404.html
