@@ -18,7 +18,7 @@ Frontend developer in progress every day....
 
 ## 🛠 Skills used
 
-Bootstrap, HTML, CSS & Javascript
+Bootstrap, HTML, CSS, SASS & Javascript
 
 ## 🔗 Links
 
